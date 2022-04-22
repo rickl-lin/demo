@@ -12,6 +12,7 @@ Linux
 `sudo apt-get install doxygen`
 
 * Drawing relational graph through graphviz.
+
 `sudo apt-get install graphviz`
 
 ### Usage:
