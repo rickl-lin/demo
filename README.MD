@@ -8,7 +8,9 @@ Doxygen can also understand the relationship between elements by including depen
 Linux
 ### Installation:
 * Install the program in the linux terminal.
+
 `sudo apt-get install doxygen`
+
 * Drawing relational graph through graphviz.
 `sudo apt-get install graphviz`
 
