@@ -1,0 +1,104 @@
+./gc_config -l
+Available GigE Vision devices:
+  GigE Interface:21G2683 (OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.100, STC-MCS312POE@D4-7C-44-30-5C-61)
+  GigE Interface:23982030 (Basler:acA2500-14gc:23982030@200.168.0.111, acA2500-14gc@00-30-53-3C-C2-CE)
+  GigE Interface:40066865 (Basler:a2A2590-22gcPRO:40066865@200.168.0.112, a2A2590-22gcPRO@00-30-53-35-EE-6A)
+  
+./gc_config 21G2683 "DeviceUserID"=""
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 32822
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 09:57:50
+[INFO] -Close device time: 09:57:51
+
+
+./gc_config -l
+Available GigE Vision devices:
+  GigE Interface:21G2683 (OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.100, STC-MCS312POE@D4-7C-44-30-5C-61)
+  GigE Interface:23982030 (Basler:acA2500-14gc:23982030@200.168.0.111, acA2500-14gc@00-30-53-3C-C2-CE)
+  GigE Interface:40066865 (Basler:a2A2590-22gcPRO:40066865@200.168.0.112, a2A2590-22gcPRO@00-30-53-35-EE-6A)
+  
+./gc_config 21G2683 "GevCurrentIPConfigurationLLA"="1"
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 37123
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 09:59:35
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[INFO] -Close device time: 09:59:36
+CPort::Write(address=0x14, length=4): GC_ERR_ERROR (-1001)
+
+
+./gc_config -l
+Available GigE Vision devices:
+  GigE Interface:21G2683 (OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.100, STC-MCS312POE@D4-7C-44-30-5C-61)
+  GigE Interface:23982030 (Basler:acA2500-14gc:23982030@200.168.0.111, acA2500-14gc@00-30-53-3C-C2-CE)
+  GigE Interface:40066865 (Basler:a2A2590-22gcPRO:40066865@200.168.0.112, a2A2590-22gcPRO@00-30-53-35-EE-6A)
+  
+./gc_config 21G2683 "GevCurrentIPConfigurationPersistentIP"="0"
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 50685
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:01:14
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[INFO] -Close device time: 10:01:14
+CPort::Write(address=0x14, length=4): GC_ERR_ERROR (-1001)
+
+
+./gc_config -l
+Available GigE Vision devices:
+  GigE Interface:21G2683 (OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.100, STC-MCS312POE@D4-7C-44-30-5C-61)
+  GigE Interface:23982030 (Basler:acA2500-14gc:23982030@200.168.0.111, acA2500-14gc@00-30-53-3C-C2-CE)
+  GigE Interface:40066865 (Basler:a2A2590-22gcPRO:40066865@200.168.0.112, a2A2590-22gcPRO@00-30-53-35-EE-6A)
+  
+./gc_config 21G2683 "GevCurrentIPConfigurationDHCP"="1"
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 48542
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:02:11
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[INFO] -Close device time: 10:02:12
+CPort::Write(address=0x14, length=4): GC_ERR_ERROR (-1001)
+
+./gc_config -l
+Available GigE Vision devices:
+  GigE Interface:21G2683 (OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.100, STC-MCS312POE@D4-7C-44-30-5C-61)
+  GigE Interface:23982030 (Basler:acA2500-14gc:23982030@200.168.0.111, acA2500-14gc@00-30-53-3C-C2-CE)
+  GigE Interface:40066865 (Basler:a2A2590-22gcPRO:40066865@200.168.0.112, a2A2590-22gcPRO@00-30-53-35-EE-6A)
+  
+./gc_config 21G2683 "Gamma"="4.0"
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 45059
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:02:59
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x01040024] Status: C008
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[WARNING] -CCP lost.
+[INFO] -Close device time: 10:03:01
+CPort::Write(address=0x1040024, length=4): GC_ERR_ERROR (-1001)
+
+
