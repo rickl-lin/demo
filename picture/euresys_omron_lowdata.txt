@@ -1,0 +1,1051 @@
+Note: Google Test filter = CameraInit*:CameraDeInit*:AcquisitionControl*:DeviceInformation*:TransportLayer*
+[==========] Running 90 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from CameraInit
+[ RUN      ] CameraInit.NewCamera
+[INFO] [ML-SYS] Construct system:/opt/SphinxSDK/GenTL/GenTLConsumer/Linux64/Release//libGEVTLS2I.cti
+[INFO] [ML-GT] Construct CGentlConsumer
+[INFO] [ML-SYS] 0x560d1f834c30:Open system
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] [ML-IF] GigE Interface:Construct interface
+[INFO] [ML-IF] GigE Interface:Open interface
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] [ML-IF] Push new device to list:STC-MCS312POE@D4-7C-44-30-5C-61
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Construct device
+[INFO] [ML-IF] Push new device to list:acA2500-14gc@00-30-53-3C-C2-CE
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Construct device
+[INFO] [ML-IF] Push new device to list:a2A2590-22gcPRO@00-30-53-35-EE-6A
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Construct device
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Open device with READONLY
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 13:47:00
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x560d1f875c30:Construct port
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:url is Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Close device
+[INFO] -Close device time: 13:47:01
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Open device with READONLY
+[INFO] -GEV Version: 1.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 13:47:01
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x560d1f8d9db0:Construct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Close device
+[INFO] -Close device time: 13:47:01
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Open device with READONLY
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 13:47:01
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x560d204a28f0:Construct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:url is Local:genicam_894e59d3.zip;c0000000;c8dc
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress not found
+[1;33m[WARN] [GC] [0mGevMACAddress not found
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway not found
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Close device
+[INFO] -Close device time: 13:47:01
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Open device with CONTROL
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 56605
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 13:47:01
+[INFO] [GS-CAM] Device opened: OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.108
+[INFO] [ML-PT] 0x560d2057c1e0:Construct port
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:url is Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[INFO] [GENAPI-TEST] ====cameraPtr->open()==== 0x560d1fe996f0
+[       OK ] CameraInit.NewCamera (2630 ms)
+[----------] 1 test from CameraInit (2630 ms total)
+
+[----------] 15 tests from AcquisitionControl
+[ RUN      ] AcquisitionControl.AcquisitionMode
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mAcquisitionMode Feature 'AcquisitionMode' : cannot convert value '100', the value is invalid.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] AcquisitionControl.AcquisitionMode (14 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStart
+[       OK ] AcquisitionControl.AcquisitionStart (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStop
+[       OK ] AcquisitionControl.AcquisitionStop (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStopMode
+[1;33m[WARN] [GC] [0mAcquisitionStopMode not found
+[       OK ] AcquisitionControl.AcquisitionStopMode (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionAbort
+[1;33m[WARN] [GC] [0mAcquisitionAbort not found
+[       OK ] AcquisitionControl.AcquisitionAbort (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionArm
+[1;33m[WARN] [GC] [0mAcquisitionArm not found
+[       OK ] AcquisitionControl.AcquisitionArm (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameCount
+[INFO] [INTEGRATION] Test integer read and write
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mAcquisitionFrameCount Value = 256 must be equal or smaller than Max = 255.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mAcquisitionFrameCount Value = 0 must be equal or greater than Min = 1.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] AcquisitionControl.AcquisitionFrameCount (13 ms)
+[ RUN      ] AcquisitionControl.AcquisitionBurstFrameCount
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not readable.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] AcquisitionControl.AcquisitionBurstFrameCount (4 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRate
+[INFO] [INTEGRATION] Test float read and write
+[INFO] [INTEGRATION] End float read and write
+[INFO] [INTEGRATION] Test float range
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[INFO] [INTEGRATION] End float range
+[INFO] [INTEGRATION] Test float exceed max value
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[INFO] [INTEGRATION] End float exceed max value
+[INFO] [INTEGRATION] Test float lessen min value
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[INFO] [INTEGRATION] End float lessen min value
+[       OK ] AcquisitionControl.AcquisitionFrameRate (64 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRateEnable
+[1;33m[WARN] [GC] [0mAcquisitionFrameRateEnable not found
+[       OK ] AcquisitionControl.AcquisitionFrameRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRate
+[1;33m[WARN] [GC] [0mAcquisitionLineRate not found
+[       OK ] AcquisitionControl.AcquisitionLineRate (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRateEnable
+[1;33m[WARN] [GC] [0mAcquisitionLineRateEnable not found
+[       OK ] AcquisitionControl.AcquisitionLineRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStatusSelector
+[1;33m[WARN] [GC] [0mAcquisitionStatusSelector not found
+[       OK ] AcquisitionControl.AcquisitionStatusSelector (0 ms)
+[ RUN      ] AcquisitionControl.DeviceModelName
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] AcquisitionControl.DeviceModelName (1 ms)
+[ RUN      ] AcquisitionControl.GevCurrentIPAddress
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] AcquisitionControl.GevCurrentIPAddress (0 ms)
+[----------] 15 tests from AcquisitionControl (101 ms total)
+
+[----------] 63 tests from DeviceInformation
+[ RUN      ] DeviceInformation.DeviceUserID
+[INFO] [INTEGRATION] Test string read and write
+[ERROR] -WriteMemory[0x000000E8]
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:144: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:159: Failure
+Expected equality of these values:
+  "username"
+  getString
+    Which is: ""
+[ERROR] -WriteMemory[0x000000E8]
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:162: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceUserID String exceeds maximum length. Max length is 16
+[INFO] [INTEGRATION] End string exceed length
+[  FAILED  ] DeviceInformation.DeviceUserID (1212 ms)
+[ RUN      ] DeviceInformation.DeviceType
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceType (7 ms)
+[ RUN      ] DeviceInformation.DeviceScanType
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceScanType (0 ms)
+[ RUN      ] DeviceInformation.DeviceVendorName
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceVendorName Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceVendorName Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceVendorName (1 ms)
+[ RUN      ] DeviceInformation.DeviceModelName
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceModelName (0 ms)
+[ RUN      ] DeviceInformation.DeviceFamilyName
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceFamilyName Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceFamilyName Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceFamilyName (3 ms)
+[ RUN      ] DeviceInformation.DeviceManufacturerInfo
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceManufacturerInfo Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceManufacturerInfo Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceManufacturerInfo (1 ms)
+[ RUN      ] DeviceInformation.DeviceVersion
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceVersion Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceVersion Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceVersion (1 ms)
+[ RUN      ] DeviceInformation.DeviceFirmwareVersion
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceFirmwareVersion Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceFirmwareVersion Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceFirmwareVersion (1 ms)
+[ RUN      ] DeviceInformation.DeviceSerialNumber
+[INFO] [INTEGRATION] Test string read and write
+[1;33m[WARN] [GC] [0mDeviceSerialNumber Node is not writable
+[INFO] [INTEGRATION] End string read and write
+[INFO] [INTEGRATION] Test string exceed length
+[1;33m[WARN] [GC] [0mDeviceSerialNumber Node is not writable
+[INFO] [INTEGRATION] End string exceed length
+[       OK ] DeviceInformation.DeviceSerialNumber (1 ms)
+[ RUN      ] DeviceInformation.DeviceID
+[1;33m[WARN] [GC] [0mDeviceID not found
+[       OK ] DeviceInformation.DeviceID (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMajor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceSFNCVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMinor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceSFNCVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionSubMinor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceSFNCVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestEntrySelector
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 2 must be equal or smaller than Max = 1.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 2 must be equal or smaller than Max = 1.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 0 must be equal or greater than Min = 1.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestEntrySelector (4 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMajorVersion
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestXMLMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMinorVersion
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestXMLMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLSubMinorVersion
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestXMLSubMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMajorVersion
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestSchemaMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMinorVersion
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceManifestSchemaMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestPrimaryURL
+[1;33m[WARN] [GC] [0mDeviceManifestPrimaryURL not found
+[       OK ] DeviceInformation.DeviceManifestPrimaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSecondaryURL
+[1;33m[WARN] [GC] [0mDeviceManifestSecondaryURL not found
+[       OK ] DeviceInformation.DeviceManifestSecondaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLType
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceTLType (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMajor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceTLVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMinor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceTLVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionSubMinor
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceTLVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMajor
+[1;33m[WARN] [GC] [0mDeviceGenCPVersionMajor not found
+[       OK ] DeviceInformation.DeviceGenCPVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMinor
+[1;33m[WARN] [GC] [0mDeviceGenCPVersionMinor not found
+[       OK ] DeviceInformation.DeviceGenCPVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceMaxThroughput
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceMaxThroughput (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSelector
+[1;33m[WARN] [GC] [0mDeviceConnectionSelector not found
+[       OK ] DeviceInformation.DeviceConnectionSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSpeed
+[1;33m[WARN] [GC] [0mDeviceConnectionSpeed not found
+[       OK ] DeviceInformation.DeviceConnectionSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionStatus
+[1;33m[WARN] [GC] [0mDeviceConnectionStatus not found
+[       OK ] DeviceInformation.DeviceConnectionStatus (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSelector
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = 1 must be equal or smaller than Max = 0.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = 1 must be equal or smaller than Max = 0.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = -1 must be equal or greater than Min = 0.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceLinkSelector (1 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSpeed
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceLinkSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimitMode
+[1;33m[WARN] [GC] [0mDeviceLinkThroughputLimitMode not found
+[       OK ] DeviceInformation.DeviceLinkThroughputLimitMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimit
+[1;33m[WARN] [GC] [0mDeviceLinkThroughputLimit not found
+[       OK ] DeviceInformation.DeviceLinkThroughputLimit (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkConnectionCount
+[1;33m[WARN] [GC] [0mDeviceLinkConnectionCount not found
+[       OK ] DeviceInformation.DeviceLinkConnectionCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatMode
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not readable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not readable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceLinkHeartbeatMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatTimeout
+[INFO] [INTEGRATION] Test float read and write
+[INFO] [INTEGRATION] End float read and write
+[INFO] [INTEGRATION] Test float range
+[INFO] [INTEGRATION] End float range
+[INFO] [INTEGRATION] Test float exceed max value
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatTimeout Value 4294967296000.000000 must be smaller than or equal 4294967295000.000000.
+[INFO] [INTEGRATION] End float exceed max value
+[INFO] [INTEGRATION] Test float lessen min value
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatTimeout Value 499000.000000 must be greater than or equal 500000.000000.
+[INFO] [INTEGRATION] End float lessen min value
+[       OK ] DeviceInformation.DeviceLinkHeartbeatTimeout (12 ms)
+[ RUN      ] DeviceInformation.DeviceLinkCommandTimeout
+[INFO] [INTEGRATION] Test float read and write
+[INFO] [INTEGRATION] End float read and write
+[INFO] [INTEGRATION] Test float range
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[INFO] [INTEGRATION] End float range
+[INFO] [INTEGRATION] Test float exceed max value
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[INFO] [INTEGRATION] End float exceed max value
+[INFO] [INTEGRATION] Test float lessen min value
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[INFO] [INTEGRATION] End float lessen min value
+[       OK ] DeviceInformation.DeviceLinkCommandTimeout (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelCount
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceStreamChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelSelector
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = 1 must be equal or smaller than Max = 0.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = 1 must be equal or smaller than Max = 0.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = -1 must be equal or greater than Min = 0.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceStreamChannelSelector (3 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelType
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceStreamChannelType (1 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelLink
+[1;33m[WARN] [GC] [0mDeviceStreamChannelLink not found
+[       OK ] DeviceInformation.DeviceStreamChannelLink (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelEndianness
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceStreamChannelEndianness Feature 'DeviceStreamChannelEndianness' : cannot convert value '100', the value is invalid.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceStreamChannelEndianness (25 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelPacketSize
+[INFO] [INTEGRATION] Test integer read and write
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize The difference between Value = 77 and Min = 72 must be dividable without rest by Inc = 4.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize Value = 16264 must be equal or smaller than Max = 16260.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize Value = 68 must be equal or greater than Min = 72.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceStreamChannelPacketSize (51 ms)
+[ RUN      ] DeviceInformation.DeviceEventChannelCount
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceEventChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceMessageChannelCount
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] DeviceInformation.DeviceMessageChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceCharacterSet
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceCharacterSet (0 ms)
+[ RUN      ] DeviceInformation.DeviceIndicatorMode
+[1;33m[WARN] [GC] [0mDeviceIndicatorMode not found
+[       OK ] DeviceInformation.DeviceIndicatorMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceStart
+[1;33m[WARN] [GC] [0mDeviceFeaturePersistenceStart not found
+[       OK ] DeviceInformation.DeviceFeaturePersistenceStart (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceEnd
+[1;33m[WARN] [GC] [0mDeviceFeaturePersistenceEnd not found
+[       OK ] DeviceInformation.DeviceFeaturePersistenceEnd (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingStart
+[INFO] [INTEGRATION] Test command read and write
+[INFO] [INTEGRATION] End command read and write
+[       OK ] DeviceInformation.DeviceRegistersStreamingStart (4 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingEnd
+[INFO] [INTEGRATION] Test command read and write
+[INFO] [INTEGRATION] End command read and write
+[       OK ] DeviceInformation.DeviceRegistersStreamingEnd (3 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersCheck
+[1;33m[WARN] [GC] [0mDeviceRegistersCheck not found
+[       OK ] DeviceInformation.DeviceRegistersCheck (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersValid
+[1;33m[WARN] [GC] [0mDeviceRegistersValid not found
+[       OK ] DeviceInformation.DeviceRegistersValid (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersEndianness
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceRegistersEndianness (1 ms)
+[ RUN      ] DeviceInformation.DeviceClockSelector
+[1;33m[WARN] [GC] [0mDeviceClockSelector not found
+[       OK ] DeviceInformation.DeviceClockSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceClockFrequency
+[1;33m[WARN] [GC] [0mDeviceClockFrequency not found
+[       OK ] DeviceInformation.DeviceClockFrequency (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortSelector
+[1;33m[WARN] [GC] [0mDeviceSerialPortSelector not found
+[       OK ] DeviceInformation.DeviceSerialPortSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortBaudRate
+[1;33m[WARN] [GC] [0mDeviceSerialPortBaudRate not found
+[       OK ] DeviceInformation.DeviceSerialPortBaudRate (0 ms)
+[ RUN      ] DeviceInformation.DeviceTemperatureSelector
+[INFO] [INTEGRATION] Test enumeration read and write
+[1;33m[WARN] [GC] [0mDeviceTemperatureSelector Feature 'DeviceTemperatureSelector' : cannot convert value '100', the value is invalid.
+[INFO] [INTEGRATION] End enumeration read and write
+[INFO] [INTEGRATION] Test enumeration set all features
+[INFO] [INTEGRATION] End enumeration set all features
+[       OK ] DeviceInformation.DeviceTemperatureSelector (3 ms)
+[ RUN      ] DeviceInformation.DeviceTemperature
+[INFO] [INTEGRATION] Test float read and write
+[INFO] [INTEGRATION] End float read and write
+[INFO] [INTEGRATION] Test float range
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[INFO] [INTEGRATION] End float range
+[INFO] [INTEGRATION] Test float exceed max value
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[INFO] [INTEGRATION] End float exceed max value
+[INFO] [INTEGRATION] Test float lessen min value
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[INFO] [INTEGRATION] End float lessen min value
+[       OK ] DeviceInformation.DeviceTemperature (0 ms)
+[----------] 63 tests from DeviceInformation (1357 ms total)
+
+[----------] 10 tests from TransportLayer
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationLLA
+[INFO] [INTEGRATION] Test boolean read and write
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:131: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:147: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] [INTEGRATION] End boolean read and write
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationLLA (1212 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationDHCP
+[INFO] [INTEGRATION] Test boolean read and write
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [GS-DIS] update devices:
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:131: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:147: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] [INTEGRATION] End boolean read and write
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationDHCP (1220 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+[INFO] [INTEGRATION] Test boolean read and write
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:131: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x560d2057c1e0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:147: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[1;31m[ERROR] [GT][Writability]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED[0m
+
+[INFO] [INTEGRATION] End boolean read and write
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationPersistentIP (1215 ms)
+[ RUN      ] TransportLayer.GevCurrentIPAddress
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.GevCurrentIPAddress (0 ms)
+[ RUN      ] TransportLayer.GevCurrentSubnetMask
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.GevCurrentSubnetMask (0 ms)
+[ RUN      ] TransportLayer.GevCurrentDefaultGateway
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.GevCurrentDefaultGateway (0 ms)
+[ RUN      ] TransportLayer.GevMACAddress
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.GevMACAddress (0 ms)
+[ RUN      ] TransportLayer.GevHeartbeatTimeout
+[1;33m[WARN] [GC] [0mGevHeartbeatTimeout not found
+[       OK ] TransportLayer.GevHeartbeatTimeout (0 ms)
+[ RUN      ] TransportLayer.PayloadSize
+[INFO] [INTEGRATION] Test integer read and write
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.PayloadSize (0 ms)
+[ RUN      ] TransportLayer.GevSCPD
+[INFO] [INTEGRATION] Test integer read and write
+[INFO] [INTEGRATION] End integer read and write
+[INFO] [INTEGRATION] Test integer range
+[INFO] [INTEGRATION] End integer range
+[INFO] [INTEGRATION] Test integer exceed  max value
+[1;33m[WARN] [GC] [0mGevSCPD Value = 4294967296 must be equal or smaller than Max = 4294967295.
+[INFO] [INTEGRATION] End integer exceed  max value
+[INFO] [INTEGRATION] Test integer lessen  min value
+[1;33m[WARN] [GC] [0mGevSCPD Value = -1 must be equal or greater than Min = 0.
+[INFO] [INTEGRATION] End integer lessen  min value
+[       OK ] TransportLayer.GevSCPD (36 ms)
+[----------] 10 tests from TransportLayer (3687 ms total)
+
+[----------] 1 test from CameraDeInit
+[ RUN      ] CameraDeInit.CloseCamera
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [GS-DIS] update devices:
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Close device
+[INFO] -Close device time: 13:47:10
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [GS-DIS] update devices:
+[INFO] [GS-DIS] DeInit MiddleLayer resources
+[INFO] [ML-SYS] 0x560d1f834c30:Get interfaces
+[INFO] [ML-IF] GigE Interface:Close interface
+[INFO] [ML-SYS] Clear systems from list
+[INFO] [ML-SYS] 0x560d1f834c30:Clear interfaces from list
+[INFO] [ML-IF] GigE Interface:Close interface
+[INFO] [ML-SYS] 0x560d1f834c30:Close system
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Destruct device
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Destruct device
+[INFO] [GENAPI-TEST] ====camera->close()====
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Destruct device
+[INFO] [ML-IF] GigE Interface:Destruct interface
+[INFO] [ML-GT] Destruct CGentlConsumer
+[INFO] [ML-SYS] 0:Destruct system  :/opt/SphinxSDK/GenTL/GenTLConsumer/Linux64/Release//libGEVTLS2I.cti
+[INFO] [GS-DIS] Gige Discovery thread terminated
+[       OK ] CameraDeInit.CloseCamera (8095 ms)
+[----------] 1 test from CameraDeInit (8096 ms total)
+
+[----------] Global test environment tear-down
+[==========] 90 tests from 5 test suites ran. (15872 ms total)
+[  PASSED  ] 86 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] DeviceInformation.DeviceUserID
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationLLA
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationDHCP
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+
+ 4 FAILED TESTS
