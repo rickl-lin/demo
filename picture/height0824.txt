@@ -1,9 +1,0 @@
-[INFO] -Start heartbeat thread.
-[INFO] -Message channel is available.
-[INFO] -Open message channel port.
-[INFO] -Message channel port: 39698
-[INFO] -Message channel source port: 49153
-[INFO] -GEV Version: 2.1
-[INFO] -Stream channel is available.
-[INFO] -Init device time: 10:00:39
-[INFO] -Close device time: 10:00:39
