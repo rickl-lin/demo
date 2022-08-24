@@ -1,0 +1,12 @@
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 42466
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:05:01
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[INFO] -Close device time: 10:05:01
+CPort::Write(address=0x14, length=4): GC_ERR_ERROR (-1001)
