@@ -1,0 +1,667 @@
+Note: Google Test filter = CameraInit*:CameraDeInit:AcquisitionControl*:DeviceInformation*:TransportLayer*
+[==========] Running 89 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from CameraInit
+[ RUN      ] CameraInit.NewCamera
+[INFO] [ML-SYS] Construct system:/opt/SphinxSDK/GenTL/GenTLConsumer/Linux64/Release//libGEVTLS2I.cti
+[INFO] [ML-GT] Construct CGentlConsumer
+[INFO] [ML-SYS] 0x55dc4ceb1c30:Open system
+[INFO] [ML-SYS] 0x55dc4ceb1c30:Get interfaces
+[INFO] [ML-IF] GigE Interface:Construct interface
+[INFO] [ML-IF] GigE Interface:Open interface
+[INFO] [ML-SYS] 0x55dc4ceb1c30:Get interfaces
+[INFO] [ML-IF] Push new device to list:STC-MCS312POE@D4-7C-44-30-5C-61
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Construct device
+[INFO] [ML-IF] Push new device to list:acA2500-14gc@00-30-53-3C-C2-CE
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Construct device
+[INFO] [ML-IF] Push new device to list:a2A2590-22gcPRO@00-30-53-35-EE-6A
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Construct device
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Open device with READONLY
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:25:04
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x55dc4cef2c20:Construct port
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:url is Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Close device
+[INFO] -Close device time: 10:25:05
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Open device with READONLY
+[INFO] -GEV Version: 1.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:25:05
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x55dc4cf56da0:Construct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Close device
+[INFO] -Close device time: 10:25:05
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Open device with READONLY
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:25:05
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x55dc4db1f8e0:Construct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:url is Local:genicam_894e59d3.zip;c0000000;c8dc
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress not found
+[1;33m[WARN] [GC] [0mGevMACAddress not found
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway not found
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Close device
+[INFO] -Close device time: 10:25:05
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Open device with CONTROL
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 50274
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:25:06
+[INFO] [GS-CAM] Device opened: OMRON SENTECH:STC-MCS312POE:21G2683@200.168.0.108
+[INFO] [ML-PT] 0x55dc4dbf91d0:Construct port
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:url is Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[INFO] [GENAPI-TEST] cameraPtr->open()0x55dc4cf77f90
+[       OK ] CameraInit.NewCamera (2939 ms)
+[----------] 1 test from CameraInit (2939 ms total)
+
+[----------] 15 tests from AcquisitionControl
+[ RUN      ] AcquisitionControl.AcquisitionMode
+[1;33m[WARN] [GC] [0mAcquisitionMode Feature 'AcquisitionMode' : cannot convert value '100', the value is invalid.
+[       OK ] AcquisitionControl.AcquisitionMode (17 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStart
+[       OK ] AcquisitionControl.AcquisitionStart (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStop
+[       OK ] AcquisitionControl.AcquisitionStop (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStopMode
+[1;33m[WARN] [GC] [0mAcquisitionStopMode not found
+[       OK ] AcquisitionControl.AcquisitionStopMode (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionAbort
+[1;33m[WARN] [GC] [0mAcquisitionAbort not found
+[       OK ] AcquisitionControl.AcquisitionAbort (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionArm
+[1;33m[WARN] [GC] [0mAcquisitionArm not found
+[       OK ] AcquisitionControl.AcquisitionArm (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameCount
+[1;33m[WARN] [GC] [0mAcquisitionFrameCount Value = 256 must be equal or smaller than Max = 255.
+[1;33m[WARN] [GC] [0mAcquisitionFrameCount Value = 0 must be equal or greater than Min = 1.
+[       OK ] AcquisitionControl.AcquisitionFrameCount (16 ms)
+[ RUN      ] AcquisitionControl.AcquisitionBurstFrameCount
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not readable.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not writable.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not available.
+[1;33m[WARN] [GC] [0mAcquisitionBurstFrameCount Node is not writable.
+[       OK ] AcquisitionControl.AcquisitionBurstFrameCount (3 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRate
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[1;33m[WARN] [GC] [0mAcquisitionFrameRate node does not have an increment.
+[       OK ] AcquisitionControl.AcquisitionFrameRate (64 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRateEnable
+[1;33m[WARN] [GC] [0mAcquisitionFrameRateEnable not found
+[       OK ] AcquisitionControl.AcquisitionFrameRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRate
+[1;33m[WARN] [GC] [0mAcquisitionLineRate not found
+[       OK ] AcquisitionControl.AcquisitionLineRate (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRateEnable
+[1;33m[WARN] [GC] [0mAcquisitionLineRateEnable not found
+[       OK ] AcquisitionControl.AcquisitionLineRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStatusSelector
+[1;33m[WARN] [GC] [0mAcquisitionStatusSelector not found
+[       OK ] AcquisitionControl.AcquisitionStatusSelector (0 ms)
+[ RUN      ] AcquisitionControl.DeviceModelName
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[       OK ] AcquisitionControl.DeviceModelName (1 ms)
+[ RUN      ] AcquisitionControl.GevCurrentIPAddress
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[       OK ] AcquisitionControl.GevCurrentIPAddress (0 ms)
+[----------] 15 tests from AcquisitionControl (106 ms total)
+
+[----------] 63 tests from DeviceInformation
+[ RUN      ] DeviceInformation.DeviceType
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceType Node is not writable.
+[       OK ] DeviceInformation.DeviceType (1 ms)
+[ RUN      ] DeviceInformation.DeviceScanType
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceScanType Node is not writable.
+[       OK ] DeviceInformation.DeviceScanType (0 ms)
+[ RUN      ] DeviceInformation.DeviceVendorName
+[1;33m[WARN] [GC] [0mDeviceVendorName Node is not writable
+[1;33m[WARN] [GC] [0mDeviceVendorName Node is not writable
+[       OK ] DeviceInformation.DeviceVendorName (1 ms)
+[ RUN      ] DeviceInformation.DeviceModelName
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[1;33m[WARN] [GC] [0mDeviceModelName Node is not writable
+[       OK ] DeviceInformation.DeviceModelName (0 ms)
+[ RUN      ] DeviceInformation.DeviceFamilyName
+[1;33m[WARN] [GC] [0mDeviceFamilyName Node is not writable
+[1;33m[WARN] [GC] [0mDeviceFamilyName Node is not writable
+[       OK ] DeviceInformation.DeviceFamilyName (3 ms)
+[ RUN      ] DeviceInformation.DeviceManufacturerInfo
+[1;33m[WARN] [GC] [0mDeviceManufacturerInfo Node is not writable
+[1;33m[WARN] [GC] [0mDeviceManufacturerInfo Node is not writable
+[       OK ] DeviceInformation.DeviceManufacturerInfo (1 ms)
+[ RUN      ] DeviceInformation.DeviceVersion
+[1;33m[WARN] [GC] [0mDeviceVersion Node is not writable
+[1;33m[WARN] [GC] [0mDeviceVersion Node is not writable
+[       OK ] DeviceInformation.DeviceVersion (1 ms)
+[ RUN      ] DeviceInformation.DeviceFirmwareVersion
+[1;33m[WARN] [GC] [0mDeviceFirmwareVersion Node is not writable
+[1;33m[WARN] [GC] [0mDeviceFirmwareVersion Node is not writable
+[       OK ] DeviceInformation.DeviceFirmwareVersion (1 ms)
+[ RUN      ] DeviceInformation.DeviceSerialNumber
+[1;33m[WARN] [GC] [0mDeviceSerialNumber Node is not writable
+[1;33m[WARN] [GC] [0mDeviceSerialNumber Node is not writable
+[       OK ] DeviceInformation.DeviceSerialNumber (1 ms)
+[ RUN      ] DeviceInformation.DeviceID
+[1;33m[WARN] [GC] [0mDeviceID not found
+[       OK ] DeviceInformation.DeviceID (0 ms)
+[ RUN      ] DeviceInformation.DeviceUserID
+[ERROR] -WriteMemory[0x000000E8]
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:92: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:99: Failure
+Expected equality of these values:
+  "username"
+  getString
+    Which is: ""
+[ERROR][Readable or witeable]Expect value and get value are different
+
+[ERROR] -WriteMemory[0x000000E8]
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationString.cpp:102: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[1;33m[WARN] [GC] [0mDeviceUserID String exceeds maximum length. Max length is 16
+[  FAILED  ] DeviceInformation.DeviceUserID (1213 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMajor
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMajor Node is not writable.
+[       OK ] DeviceInformation.DeviceSFNCVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMinor
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionMinor Node is not writable.
+[       OK ] DeviceInformation.DeviceSFNCVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionSubMinor
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceSFNCVersionSubMinor Node is not writable.
+[       OK ] DeviceInformation.DeviceSFNCVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestEntrySelector
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 2 must be equal or smaller than Max = 1.
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 2 must be equal or smaller than Max = 1.
+[1;33m[WARN] [GC] [0mDeviceManifestEntrySelector Value = 0 must be equal or greater than Min = 1.
+[       OK ] DeviceInformation.DeviceManifestEntrySelector (9 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMajorVersion
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMajorVersion Node is not writable.
+[       OK ] DeviceInformation.DeviceManifestXMLMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMinorVersion
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLMinorVersion Node is not writable.
+[       OK ] DeviceInformation.DeviceManifestXMLMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLSubMinorVersion
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestXMLSubMinorVersion Node is not writable.
+[       OK ] DeviceInformation.DeviceManifestXMLSubMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMajorVersion
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMajorVersion Node is not writable.
+[       OK ] DeviceInformation.DeviceManifestSchemaMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMinorVersion
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceManifestSchemaMinorVersion Node is not writable.
+[       OK ] DeviceInformation.DeviceManifestSchemaMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestPrimaryURL
+[1;33m[WARN] [GC] [0mDeviceManifestPrimaryURL not found
+[       OK ] DeviceInformation.DeviceManifestPrimaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSecondaryURL
+[1;33m[WARN] [GC] [0mDeviceManifestSecondaryURL not found
+[       OK ] DeviceInformation.DeviceManifestSecondaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLType
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLType Node is not writable.
+[       OK ] DeviceInformation.DeviceTLType (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMajor
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMajor Node is not writable.
+[       OK ] DeviceInformation.DeviceTLVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMinor
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionMinor Node is not writable.
+[       OK ] DeviceInformation.DeviceTLVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionSubMinor
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceTLVersionSubMinor Node is not writable.
+[       OK ] DeviceInformation.DeviceTLVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMajor
+[1;33m[WARN] [GC] [0mDeviceGenCPVersionMajor not found
+[       OK ] DeviceInformation.DeviceGenCPVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMinor
+[1;33m[WARN] [GC] [0mDeviceGenCPVersionMinor not found
+[       OK ] DeviceInformation.DeviceGenCPVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceMaxThroughput
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceMaxThroughput Node is not writable.
+[       OK ] DeviceInformation.DeviceMaxThroughput (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSelector
+[1;33m[WARN] [GC] [0mDeviceConnectionSelector not found
+[       OK ] DeviceInformation.DeviceConnectionSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSpeed
+[1;33m[WARN] [GC] [0mDeviceConnectionSpeed not found
+[       OK ] DeviceInformation.DeviceConnectionSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionStatus
+[1;33m[WARN] [GC] [0mDeviceConnectionStatus not found
+[       OK ] DeviceInformation.DeviceConnectionStatus (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSelector
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = 1 must be equal or smaller than Max = 0.
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = 1 must be equal or smaller than Max = 0.
+[1;33m[WARN] [GC] [0mDeviceLinkSelector Value = -1 must be equal or greater than Min = 0.
+[       OK ] DeviceInformation.DeviceLinkSelector (2 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSpeed
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkSpeed Node is not writable.
+[       OK ] DeviceInformation.DeviceLinkSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimitMode
+[1;33m[WARN] [GC] [0mDeviceLinkThroughputLimitMode not found
+[       OK ] DeviceInformation.DeviceLinkThroughputLimitMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimit
+[1;33m[WARN] [GC] [0mDeviceLinkThroughputLimit not found
+[       OK ] DeviceInformation.DeviceLinkThroughputLimit (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkConnectionCount
+[1;33m[WARN] [GC] [0mDeviceLinkConnectionCount not found
+[       OK ] DeviceInformation.DeviceLinkConnectionCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatMode
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not readable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not readable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatMode Node is not writable.
+[       OK ] DeviceInformation.DeviceLinkHeartbeatMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatTimeout
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatTimeout Value 4294967296000.000000 must be smaller than or equal 4294967295000.000000.
+[1;33m[WARN] [GC] [0mDeviceLinkHeartbeatTimeout Value 499000.000000 must be greater than or equal 500000.000000.
+[       OK ] DeviceInformation.DeviceLinkHeartbeatTimeout (25 ms)
+[ RUN      ] DeviceInformation.DeviceLinkCommandTimeout
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[1;33m[WARN] [GC] [0mDeviceLinkCommandTimeout node does not have an increment.
+[       OK ] DeviceInformation.DeviceLinkCommandTimeout (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelCount
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelCount Node is not writable.
+[       OK ] DeviceInformation.DeviceStreamChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelSelector
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = 1 must be equal or smaller than Max = 0.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = 1 must be equal or smaller than Max = 0.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelSelector Value = -1 must be equal or greater than Min = 0.
+[       OK ] DeviceInformation.DeviceStreamChannelSelector (1 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelType
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceStreamChannelType Node is not writable.
+[       OK ] DeviceInformation.DeviceStreamChannelType (7 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelLink
+[1;33m[WARN] [GC] [0mDeviceStreamChannelLink not found
+[       OK ] DeviceInformation.DeviceStreamChannelLink (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelEndianness
+[INFO] [ML-SYS] 0x55dc4ceb1c30:Get interfaces
+[1;33m[WARN] [GC] [0mDeviceStreamChannelEndianness Feature 'DeviceStreamChannelEndianness' : cannot convert value '100', the value is invalid.
+[       OK ] DeviceInformation.DeviceStreamChannelEndianness (155 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelPacketSize
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize The difference between Value = 77 and Min = 72 must be dividable without rest by Inc = 4.
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize Value = 16264 must be equal or smaller than Max = 16260.
+[1;33m[WARN] [GC] [0mGevSCPSPacketSize Value = 68 must be equal or greater than Min = 72.
+[       OK ] DeviceInformation.DeviceStreamChannelPacketSize (75 ms)
+[ RUN      ] DeviceInformation.DeviceEventChannelCount
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[       OK ] DeviceInformation.DeviceEventChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceMessageChannelCount
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceEventChannelCount Node is not writable.
+[       OK ] DeviceInformation.DeviceMessageChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceCharacterSet
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceCharacterSet Node is not writable.
+[       OK ] DeviceInformation.DeviceCharacterSet (0 ms)
+[ RUN      ] DeviceInformation.DeviceIndicatorMode
+[1;33m[WARN] [GC] [0mDeviceIndicatorMode not found
+[       OK ] DeviceInformation.DeviceIndicatorMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceStart
+[1;33m[WARN] [GC] [0mDeviceFeaturePersistenceStart not found
+[       OK ] DeviceInformation.DeviceFeaturePersistenceStart (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceEnd
+[1;33m[WARN] [GC] [0mDeviceFeaturePersistenceEnd not found
+[       OK ] DeviceInformation.DeviceFeaturePersistenceEnd (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingStart
+[       OK ] DeviceInformation.DeviceRegistersStreamingStart (8 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingEnd
+[       OK ] DeviceInformation.DeviceRegistersStreamingEnd (6 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersCheck
+[1;33m[WARN] [GC] [0mDeviceRegistersCheck not found
+[       OK ] DeviceInformation.DeviceRegistersCheck (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersValid
+[1;33m[WARN] [GC] [0mDeviceRegistersValid not found
+[       OK ] DeviceInformation.DeviceRegistersValid (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersEndianness
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[1;33m[WARN] [GC] [0mDeviceRegistersEndianness Node is not writable.
+[       OK ] DeviceInformation.DeviceRegistersEndianness (3 ms)
+[ RUN      ] DeviceInformation.DeviceClockSelector
+[1;33m[WARN] [GC] [0mDeviceClockSelector not found
+[       OK ] DeviceInformation.DeviceClockSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceClockFrequency
+[1;33m[WARN] [GC] [0mDeviceClockFrequency not found
+[       OK ] DeviceInformation.DeviceClockFrequency (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortSelector
+[1;33m[WARN] [GC] [0mDeviceSerialPortSelector not found
+[       OK ] DeviceInformation.DeviceSerialPortSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortBaudRate
+[1;33m[WARN] [GC] [0mDeviceSerialPortBaudRate not found
+[       OK ] DeviceInformation.DeviceSerialPortBaudRate (0 ms)
+[ RUN      ] DeviceInformation.DeviceTemperatureSelector
+[1;33m[WARN] [GC] [0mDeviceTemperatureSelector Feature 'DeviceTemperatureSelector' : cannot convert value '100', the value is invalid.
+[       OK ] DeviceInformation.DeviceTemperatureSelector (5 ms)
+[ RUN      ] DeviceInformation.DeviceTemperature
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[1;33m[WARN] [GC] [0mDeviceTemperature node does not have an increment.
+[       OK ] DeviceInformation.DeviceTemperature (0 ms)
+[----------] 63 tests from DeviceInformation (1535 ms total)
+
+[----------] 10 tests from TransportLayer
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationLLA
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:102: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [GS-DIS] update devices:
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:110: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationLLA (1209 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationDHCP
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:102: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:110: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationDHCP (1220 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+[INFO] [ML-SYS] 0x55dc4ceb1c30:Get interfaces
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:102: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000014] Status: C008
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : Unspecified runtime error
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort() failed : One of the parameter given was not valid or out of range
+[1;33m[WARN] [ML-PT] [0m0x55dc4dbf91d0:GCWritePort(): size and length is difference
+[1;31m[ERROR] [ML-PT] [0mGCWritePort() failed over 3 times
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/utility/integrationBoolean.cpp:110: Failure
+Expected equality of these values:
+  GigeCamera::GCStatus::GIGE_SUCCESS
+    Which is: 0
+  writeStatus
+    Which is: 2
+[ERROR][Writable]Test is fail
+Expcet result:GIGE_SUCCESS
+Actual result:GIGE_NOT_SUPPORTED
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationPersistentIP (1207 ms)
+[ RUN      ] TransportLayer.GevCurrentIPAddress
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentIPAddress Node is not writable.
+[       OK ] TransportLayer.GevCurrentIPAddress (0 ms)
+[ RUN      ] TransportLayer.GevCurrentSubnetMask
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentSubnetMask Node is not writable.
+[       OK ] TransportLayer.GevCurrentSubnetMask (0 ms)
+[ RUN      ] TransportLayer.GevCurrentDefaultGateway
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[1;33m[WARN] [GC] [0mGevCurrentDefaultGateway Node is not writable.
+[       OK ] TransportLayer.GevCurrentDefaultGateway (0 ms)
+[ RUN      ] TransportLayer.GevMACAddress
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[1;33m[WARN] [GC] [0mGevMACAddress Node is not writable.
+[       OK ] TransportLayer.GevMACAddress (0 ms)
+[ RUN      ] TransportLayer.GevHeartbeatTimeout
+[1;33m[WARN] [GC] [0mGevHeartbeatTimeout not found
+[       OK ] TransportLayer.GevHeartbeatTimeout (0 ms)
+[ RUN      ] TransportLayer.PayloadSize
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[1;33m[WARN] [GC] [0mPayloadSize Node is not writable.
+[       OK ] TransportLayer.PayloadSize (0 ms)
+[ RUN      ] TransportLayer.GevSCPD
+[1;33m[WARN] [GC] [0mGevSCPD Value = 4294967296 must be equal or smaller than Max = 4294967295.
+[1;33m[WARN] [GC] [0mGevSCPD Value = -1 must be equal or greater than Min = 0.
+[       OK ] TransportLayer.GevSCPD (36 ms)
+[----------] 10 tests from TransportLayer (3676 ms total)
+
+[----------] Global test environment tear-down
+[==========] 89 tests from 4 test suites ran. (8257 ms total)
+[  PASSED  ] 85 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] DeviceInformation.DeviceUserID
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationLLA
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationDHCP
+[  FAILED  ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+
+ 4 FAILED TESTS

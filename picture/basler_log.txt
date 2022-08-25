@@ -1,0 +1,493 @@
+Note: Google Test filter = CameraInit*:CameraDeInit:AcquisitionControl*:DeviceInformation*:TransportLayer*
+[==========] Running 89 tests from 4 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from CameraInit
+[ RUN      ] CameraInit.NewCamera
+[INFO] [ML-SYS] Construct system:/opt/SphinxSDK/GenTL/GenTLConsumer/Linux64/Release//libGEVTLS2I.cti
+[INFO] [ML-GT] Construct CGentlConsumer
+[INFO] [ML-SYS] 0x556ab8f8ec30:Open system
+[INFO] [ML-SYS] 0x556ab8f8ec30:Get interfaces
+[INFO] [ML-IF] GigE Interface:Construct interface
+[INFO] [ML-IF] GigE Interface:Open interface
+[INFO] [ML-SYS] 0x556ab8f8ec30:Get interfaces
+[INFO] [ML-IF] Push new device to list:acA2500-14gc@00-30-53-3C-C2-CE
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Construct device
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Open device with READONLY
+[INFO] -GEV Version: 1.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:30:25
+[INFO] - Message channel not Supported
+[INFO] [ML-PT] 0x556ab8fcf560:Construct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[1;33m[WARN] [GC] [0mGevIPConfigurationStatus not found
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Close device
+[INFO] -Close device time: 10:30:26
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [GS-DIS] Discovery completed, available device number= 1
+[1;31m[ERROR] [GS-FAC] [0mdevice not found, modelname: a2A2590-22gcPRO, ip: 200.168.0.112
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:59: Failure
+Value of: discoveryEnv->newCameraStatus
+  Actual: false
+Expected: true
+[ERROR] Not Find Device
+[  FAILED  ] CameraInit.NewCamera (1648 ms)
+[----------] 1 test from CameraInit (1648 ms total)
+
+[----------] 15 tests from AcquisitionControl
+[ RUN      ] AcquisitionControl.AcquisitionMode
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:107: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionMode (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStart
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:119: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionStart (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStop
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:131: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionStop (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStopMode
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:143: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionStopMode (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionAbort
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:155: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionAbort (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionArm
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:167: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionArm (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:179: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameCount (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionBurstFrameCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:191: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionBurstFrameCount (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRate
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:203: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameRate (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionFrameRateEnable
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:215: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRate
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:227: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionLineRate (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionLineRateEnable
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:239: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionLineRateEnable (0 ms)
+[ RUN      ] AcquisitionControl.AcquisitionStatusSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:251: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.AcquisitionStatusSelector (0 ms)
+[ RUN      ] AcquisitionControl.DeviceModelName
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:263: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.DeviceModelName (0 ms)
+[ RUN      ] AcquisitionControl.GevCurrentIPAddress
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:275: Skipped
+Camera failed to open
+[  SKIPPED ] AcquisitionControl.GevCurrentIPAddress (0 ms)
+[----------] 15 tests from AcquisitionControl (0 ms total)
+
+[----------] 63 tests from DeviceInformation
+[ RUN      ] DeviceInformation.DeviceType
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:287: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceType (0 ms)
+[ RUN      ] DeviceInformation.DeviceScanType
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:299: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceScanType (0 ms)
+[ RUN      ] DeviceInformation.DeviceVendorName
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:311: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceVendorName (0 ms)
+[ RUN      ] DeviceInformation.DeviceModelName
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:323: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceModelName (0 ms)
+[ RUN      ] DeviceInformation.DeviceFamilyName
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:335: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceFamilyName (0 ms)
+[ RUN      ] DeviceInformation.DeviceManufacturerInfo
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:347: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManufacturerInfo (0 ms)
+[ RUN      ] DeviceInformation.DeviceVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:359: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceFirmwareVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:371: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceFirmwareVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialNumber
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:383: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSerialNumber (0 ms)
+[ RUN      ] DeviceInformation.DeviceID
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:395: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceID (0 ms)
+[ RUN      ] DeviceInformation.DeviceUserID
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:407: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceUserID (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMajor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:419: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionMinor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:431: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceSFNCVersionSubMinor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:443: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestEntrySelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:455: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestEntrySelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMajorVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:467: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLMinorVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:479: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestXMLSubMinorVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:491: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLSubMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMajorVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:503: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestSchemaMajorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSchemaMinorVersion
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:515: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestSchemaMinorVersion (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestPrimaryURL
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:527: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestPrimaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceManifestSecondaryURL
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:539: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceManifestSecondaryURL (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLType
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:551: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTLType (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMajor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:563: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTLVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionMinor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:575: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTLVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceTLVersionSubMinor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:587: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTLVersionSubMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMajor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:599: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceGenCPVersionMajor (0 ms)
+[ RUN      ] DeviceInformation.DeviceGenCPVersionMinor
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:611: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceGenCPVersionMinor (0 ms)
+[ RUN      ] DeviceInformation.DeviceMaxThroughput
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:623: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceMaxThroughput (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:635: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceConnectionSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionSpeed
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:647: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceConnectionSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceConnectionStatus
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:659: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceConnectionStatus (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:671: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkSpeed
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:683: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkSpeed (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimitMode
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:695: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkThroughputLimitMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkThroughputLimit
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:707: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkThroughputLimit (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkConnectionCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:719: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkConnectionCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatMode
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:731: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkHeartbeatMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkHeartbeatTimeout
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:743: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkHeartbeatTimeout (0 ms)
+[ RUN      ] DeviceInformation.DeviceLinkCommandTimeout
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:755: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceLinkCommandTimeout (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:767: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:779: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelType
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:791: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelType (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelLink
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:803: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelLink (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelEndianness
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:815: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelEndianness (0 ms)
+[ RUN      ] DeviceInformation.DeviceStreamChannelPacketSize
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:827: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelPacketSize (0 ms)
+[ RUN      ] DeviceInformation.DeviceEventChannelCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:839: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceEventChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceMessageChannelCount
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:851: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceMessageChannelCount (0 ms)
+[ RUN      ] DeviceInformation.DeviceCharacterSet
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:863: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceCharacterSet (0 ms)
+[ RUN      ] DeviceInformation.DeviceIndicatorMode
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:875: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceIndicatorMode (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceStart
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:888: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceFeaturePersistenceStart (0 ms)
+[ RUN      ] DeviceInformation.DeviceFeaturePersistenceEnd
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:901: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceFeaturePersistenceEnd (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingStart
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:914: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceRegistersStreamingStart (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersStreamingEnd
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:927: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceRegistersStreamingEnd (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersCheck
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:939: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceRegistersCheck (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersValid
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:951: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceRegistersValid (0 ms)
+[ RUN      ] DeviceInformation.DeviceRegistersEndianness
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:963: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceRegistersEndianness (0 ms)
+[ RUN      ] DeviceInformation.DeviceClockSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:975: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceClockSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceClockFrequency
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:987: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceClockFrequency (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:999: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSerialPortSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceSerialPortBaudRate
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1011: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceSerialPortBaudRate (0 ms)
+[ RUN      ] DeviceInformation.DeviceTemperatureSelector
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1023: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTemperatureSelector (0 ms)
+[ RUN      ] DeviceInformation.DeviceTemperature
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1035: Skipped
+Camera failed to open
+[  SKIPPED ] DeviceInformation.DeviceTemperature (0 ms)
+[----------] 63 tests from DeviceInformation (0 ms total)
+
+[----------] 10 tests from TransportLayer
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationLLA
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1047: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationLLA (0 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationDHCP
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1059: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationDHCP (0 ms)
+[ RUN      ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1071: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationPersistentIP (0 ms)
+[ RUN      ] TransportLayer.GevCurrentIPAddress
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1083: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentIPAddress (0 ms)
+[ RUN      ] TransportLayer.GevCurrentSubnetMask
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1095: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentSubnetMask (0 ms)
+[ RUN      ] TransportLayer.GevCurrentDefaultGateway
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1107: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevCurrentDefaultGateway (0 ms)
+[ RUN      ] TransportLayer.GevMACAddress
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1119: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevMACAddress (0 ms)
+[ RUN      ] TransportLayer.GevHeartbeatTimeout
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1131: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevHeartbeatTimeout (0 ms)
+[ RUN      ] TransportLayer.PayloadSize
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1143: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.PayloadSize (0 ms)
+[ RUN      ] TransportLayer.GevSCPD
+/home/rick/Desktop/gige/aws-gige-back/testcases/integrationTest/integrationGenapi.cpp:1155: Skipped
+Camera failed to open
+[  SKIPPED ] TransportLayer.GevSCPD (0 ms)
+[----------] 10 tests from TransportLayer (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 89 tests from 4 test suites ran. (1649 ms total)
+[  PASSED  ] 0 tests.
+[  SKIPPED ] 88 tests, listed below:
+[  SKIPPED ] AcquisitionControl.AcquisitionMode
+[  SKIPPED ] AcquisitionControl.AcquisitionStart
+[  SKIPPED ] AcquisitionControl.AcquisitionStop
+[  SKIPPED ] AcquisitionControl.AcquisitionStopMode
+[  SKIPPED ] AcquisitionControl.AcquisitionAbort
+[  SKIPPED ] AcquisitionControl.AcquisitionArm
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameCount
+[  SKIPPED ] AcquisitionControl.AcquisitionBurstFrameCount
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameRate
+[  SKIPPED ] AcquisitionControl.AcquisitionFrameRateEnable
+[  SKIPPED ] AcquisitionControl.AcquisitionLineRate
+[  SKIPPED ] AcquisitionControl.AcquisitionLineRateEnable
+[  SKIPPED ] AcquisitionControl.AcquisitionStatusSelector
+[  SKIPPED ] AcquisitionControl.DeviceModelName
+[  SKIPPED ] AcquisitionControl.GevCurrentIPAddress
+[  SKIPPED ] DeviceInformation.DeviceType
+[  SKIPPED ] DeviceInformation.DeviceScanType
+[  SKIPPED ] DeviceInformation.DeviceVendorName
+[  SKIPPED ] DeviceInformation.DeviceModelName
+[  SKIPPED ] DeviceInformation.DeviceFamilyName
+[  SKIPPED ] DeviceInformation.DeviceManufacturerInfo
+[  SKIPPED ] DeviceInformation.DeviceVersion
+[  SKIPPED ] DeviceInformation.DeviceFirmwareVersion
+[  SKIPPED ] DeviceInformation.DeviceSerialNumber
+[  SKIPPED ] DeviceInformation.DeviceID
+[  SKIPPED ] DeviceInformation.DeviceUserID
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionMajor
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionMinor
+[  SKIPPED ] DeviceInformation.DeviceSFNCVersionSubMinor
+[  SKIPPED ] DeviceInformation.DeviceManifestEntrySelector
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLMajorVersion
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLMinorVersion
+[  SKIPPED ] DeviceInformation.DeviceManifestXMLSubMinorVersion
+[  SKIPPED ] DeviceInformation.DeviceManifestSchemaMajorVersion
+[  SKIPPED ] DeviceInformation.DeviceManifestSchemaMinorVersion
+[  SKIPPED ] DeviceInformation.DeviceManifestPrimaryURL
+[  SKIPPED ] DeviceInformation.DeviceManifestSecondaryURL
+[  SKIPPED ] DeviceInformation.DeviceTLType
+[  SKIPPED ] DeviceInformation.DeviceTLVersionMajor
+[  SKIPPED ] DeviceInformation.DeviceTLVersionMinor
+[  SKIPPED ] DeviceInformation.DeviceTLVersionSubMinor
+[  SKIPPED ] DeviceInformation.DeviceGenCPVersionMajor
+[  SKIPPED ] DeviceInformation.DeviceGenCPVersionMinor
+[  SKIPPED ] DeviceInformation.DeviceMaxThroughput
+[  SKIPPED ] DeviceInformation.DeviceConnectionSelector
+[  SKIPPED ] DeviceInformation.DeviceConnectionSpeed
+[  SKIPPED ] DeviceInformation.DeviceConnectionStatus
+[  SKIPPED ] DeviceInformation.DeviceLinkSelector
+[  SKIPPED ] DeviceInformation.DeviceLinkSpeed
+[  SKIPPED ] DeviceInformation.DeviceLinkThroughputLimitMode
+[  SKIPPED ] DeviceInformation.DeviceLinkThroughputLimit
+[  SKIPPED ] DeviceInformation.DeviceLinkConnectionCount
+[  SKIPPED ] DeviceInformation.DeviceLinkHeartbeatMode
+[  SKIPPED ] DeviceInformation.DeviceLinkHeartbeatTimeout
+[  SKIPPED ] DeviceInformation.DeviceLinkCommandTimeout
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelCount
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelSelector
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelType
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelLink
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelEndianness
+[  SKIPPED ] DeviceInformation.DeviceStreamChannelPacketSize
+[  SKIPPED ] DeviceInformation.DeviceEventChannelCount
+[  SKIPPED ] DeviceInformation.DeviceMessageChannelCount
+[  SKIPPED ] DeviceInformation.DeviceCharacterSet
+[  SKIPPED ] DeviceInformation.DeviceIndicatorMode
+[  SKIPPED ] DeviceInformation.DeviceFeaturePersistenceStart
+[  SKIPPED ] DeviceInformation.DeviceFeaturePersistenceEnd
+[  SKIPPED ] DeviceInformation.DeviceRegistersStreamingStart
+[  SKIPPED ] DeviceInformation.DeviceRegistersStreamingEnd
+[  SKIPPED ] DeviceInformation.DeviceRegistersCheck
+[  SKIPPED ] DeviceInformation.DeviceRegistersValid
+[  SKIPPED ] DeviceInformation.DeviceRegistersEndianness
+[  SKIPPED ] DeviceInformation.DeviceClockSelector
+[  SKIPPED ] DeviceInformation.DeviceClockFrequency
+[  SKIPPED ] DeviceInformation.DeviceSerialPortSelector
+[  SKIPPED ] DeviceInformation.DeviceSerialPortBaudRate
+[  SKIPPED ] DeviceInformation.DeviceTemperatureSelector
+[  SKIPPED ] DeviceInformation.DeviceTemperature
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationLLA
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationDHCP
+[  SKIPPED ] TransportLayer.GevCurrentIPConfigurationPersistentIP
+[  SKIPPED ] TransportLayer.GevCurrentIPAddress
+[  SKIPPED ] TransportLayer.GevCurrentSubnetMask
+[  SKIPPED ] TransportLayer.GevCurrentDefaultGateway
+[  SKIPPED ] TransportLayer.GevMACAddress
+[  SKIPPED ] TransportLayer.GevHeartbeatTimeout
+[  SKIPPED ] TransportLayer.PayloadSize
+[  SKIPPED ] TransportLayer.GevSCPD
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CameraInit.NewCamera
+
+ 1 FAILED TEST

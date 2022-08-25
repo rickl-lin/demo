@@ -1,0 +1,803 @@
+{
+  "tests": 89,
+  "failures": 4,
+  "disabled": 0,
+  "errors": 0,
+  "timestamp": "2022-08-25T10:23:22Z",
+  "time": "8.18s",
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "CameraInit",
+      "tests": 1,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2022-08-25T10:23:22Z",
+      "time": "2.736s",
+      "testsuite": [
+        {
+          "name": "NewCamera",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:22Z",
+          "time": "2.736s",
+          "classname": "CameraInit"
+        }
+      ]
+    },
+    {
+      "name": "AcquisitionControl",
+      "tests": 15,
+      "failures": 0,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2022-08-25T10:23:24Z",
+      "time": "0.088s",
+      "testsuite": [
+        {
+          "name": "AcquisitionMode",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.014s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionStart",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionStop",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionStopMode",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionAbort",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionArm",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionFrameCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.013s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionBurstFrameCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.003s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionFrameRate",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.054s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionFrameRateEnable",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionLineRate",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionLineRateEnable",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "AcquisitionStatusSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "DeviceModelName",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "AcquisitionControl"
+        },
+        {
+          "name": "GevCurrentIPAddress",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "AcquisitionControl"
+        }
+      ]
+    },
+    {
+      "name": "DeviceInformation",
+      "tests": 63,
+      "failures": 1,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2022-08-25T10:23:24Z",
+      "time": "1.343s",
+      "testsuite": [
+        {
+          "name": "DeviceType",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceScanType",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceVendorName",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceModelName",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceFamilyName",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.002s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManufacturerInfo",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceFirmwareVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceSerialNumber",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0.002s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceID",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceUserID",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:24Z",
+          "time": "1.2s",
+          "classname": "DeviceInformation",
+          "failures": [
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationString.cpp:92\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            },
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationString.cpp:99\nExpected equality of these values:\n  \"username\"\n  getString\n    Which is: \"\"\n[ERROR][Readable or witeable]Expect value and get value are different\n",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "DeviceSFNCVersionMajor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceSFNCVersionMinor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceSFNCVersionSubMinor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestEntrySelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.006s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestXMLMajorVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestXMLMinorVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestXMLSubMinorVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestSchemaMajorVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestSchemaMinorVersion",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestPrimaryURL",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceManifestSecondaryURL",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTLType",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTLVersionMajor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTLVersionMinor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTLVersionSubMinor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceGenCPVersionMajor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceGenCPVersionMinor",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceMaxThroughput",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceConnectionSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceConnectionSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceConnectionStatus",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.002s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkSpeed",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkThroughputLimitMode",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkThroughputLimit",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkConnectionCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkHeartbeatMode",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkHeartbeatTimeout",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.013s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceLinkCommandTimeout",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelType",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.001s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelLink",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelEndianness",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.026s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceStreamChannelPacketSize",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.054s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceEventChannelCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceMessageChannelCount",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceCharacterSet",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceIndicatorMode",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceFeaturePersistenceStart",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceFeaturePersistenceEnd",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceRegistersStreamingStart",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.006s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceRegistersStreamingEnd",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.004s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceRegistersCheck",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceRegistersValid",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceRegistersEndianness",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.002s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceClockSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceClockFrequency",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceSerialPortSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceSerialPortBaudRate",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTemperatureSelector",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0.003s",
+          "classname": "DeviceInformation"
+        },
+        {
+          "name": "DeviceTemperature",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "0s",
+          "classname": "DeviceInformation"
+        }
+      ]
+    },
+    {
+      "name": "TransportLayer",
+      "tests": 10,
+      "failures": 3,
+      "disabled": 0,
+      "errors": 0,
+      "timestamp": "2022-08-25T10:23:26Z",
+      "time": "4.012s",
+      "testsuite": [
+        {
+          "name": "GevCurrentIPConfigurationLLA",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:26Z",
+          "time": "1.21s",
+          "classname": "TransportLayer",
+          "failures": [
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationBoolean.cpp:102\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            },
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationBoolean.cpp:110\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "GevCurrentIPConfigurationDHCP",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:27Z",
+          "time": "1.366s",
+          "classname": "TransportLayer",
+          "failures": [
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationBoolean.cpp:102\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            },
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationBoolean.cpp:110\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "GevCurrentIPConfigurationPersistentIP",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:28Z",
+          "time": "1.23s",
+          "classname": "TransportLayer",
+          "failures": [
+            {
+              "failure": "\/home\/rick\/Desktop\/gige\/aws-gige-back\/testcases\/integrationTest\/utility\/integrationBoolean.cpp:102\nExpected equality of these values:\n  GigeCamera::GCStatus::GIGE_SUCCESS\n    Which is: 0\n  writeStatus\n    Which is: 2\n[ERROR][Writable]Test is fail\nExpcet result:GIGE_SUCCESS\nActual result:GIGE_NOT_SUPPORTED",
+              "type": ""
+            }
+          ]
+        },
+        {
+          "name": "GevCurrentIPAddress",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "GevCurrentSubnetMask",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "GevCurrentDefaultGateway",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "GevMACAddress",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "GevHeartbeatTimeout",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "PayloadSize",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0s",
+          "classname": "TransportLayer"
+        },
+        {
+          "name": "GevSCPD",
+          "status": "RUN",
+          "result": "COMPLETED",
+          "timestamp": "2022-08-25T10:23:30Z",
+          "time": "0.202s",
+          "classname": "TransportLayer"
+        }
+      ]
+    }
+  ]
+}
