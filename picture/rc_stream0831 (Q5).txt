@@ -1,0 +1,225 @@
+BASLER
+[INFO] -Start heartbeat thread.
+[WARNING] - Message channel is available, but EVENT or EVENTDATA commands not enabled in the GVCP Capability register.
+[INFO] -Message channel is not available.
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 08:10:48
+[INFO] - Message channel not Supported
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 50663
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [1096].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1376].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1448].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1464].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+isgrabing before: 0
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 1920000
+[INFO] -PayloadPacketSize: 1464
+[INFO] -Number of payload packets: 1312
+[INFO] -PacketDelay: 512
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 08:10:50
+isgrabing: 1
+Package size: 1500
+
+[INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+Received buffer with timestamp: 0.721222143
+Received buffer with timestamp: 0.882724328
+Received buffer with timestamp: 0.044077064
+Received buffer with timestamp: 0.205516014
+Received buffer with timestamp: 0.374334580
+Received buffer with timestamp: 0.535709078
+Received buffer with timestamp: 0.697163996
+Received buffer with timestamp: 0.858626691
+Received buffer with timestamp: 0.019877022
+Received buffer with timestamp: 0.181321859
+[INFO] -GrabFunc leaving main loop
+[INFO] -Late delivery for image buffer
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 12, Errors: 0 Lost: 0.00 %
+[INFO] -Packets: 15744 Errors: 1309 Lost: 8.31 %
+[INFO] -6.1 fps
+[INFO] -Stop acquisition time: 08:10:52
+isgrabing after: 0
+
+Received buffers:   10
+Incomplete buffers: 0
+Buffers per second: 6.85
+[INFO] -Close device time: 08:10:52
+
+
+
+
+OMRON
+
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 43074
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 08:10:15
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 42640
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [1096].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1376].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1448].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1464].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+isgrabing before: 0
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145728
+[INFO] -PayloadPacketSize: 1464
+[INFO] -Number of payload packets: 2149
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 08:10:17
+isgrabing: 1
+Package size: 1500
+
+[INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+Incomplete buffer received
+[ERROR] -Missing frames: 2 -> 17
+Incomplete buffer received
+[ERROR] -Missing frames: 19 -> 24
+Incomplete buffer received
+[ERROR] -Missing frames: 26 -> 32
+Incomplete buffer received
+[ERROR] -Missing frames: 34 -> 40
+Incomplete buffer received
+[ERROR] -Missing frames: 42 -> 50
+Incomplete buffer received
+[ERROR] -Missing frames: 52 -> 61
+Incomplete buffer received
+[ERROR] -Missing frames: 63 -> 67
+[INFO] -Still 1840 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 69 -> 87
+Incomplete buffer received
+Incomplete buffer received
+[ERROR] -Missing frames: 89 -> 1
+Incomplete buffer received
+[ERROR] -Missing frames: 3 -> 89
+Incomplete buffer received
+[ERROR] -Missing frames: 91 -> 93
+Incomplete buffer received
+[ERROR] -Missing frames: 95 -> 108
+Incomplete buffer received
+[ERROR] -Missing frames: 110 -> 111
+[INFO] -Still 1838 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 113 -> 124
+Incomplete buffer received
+Incomplete buffer received
+[ERROR] -Missing frames: 126 -> 90
+[INFO] -Still 1829 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 92 -> 126
+Incomplete buffer received
+Incomplete buffer received
+[INFO] -Still 1822 missing packets. Updated buffer pointers
+Incomplete buffer received
+[ERROR] -Missing frame: 129
+Incomplete buffer received
+Incomplete buffer received
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[WARNING] -CCP lost.
+[WARNING] -Time out while waiting for a new image (1000)
+[ERROR] -Missing frames: 132 -> 134
+Incomplete buffer received
+[INFO] -GrabFunc leaving main loop
+[INFO] -Late delivery for previous buffer
+[ERROR] -Missing frames: 136 -> 138
+[INFO] -Late delivery for image buffer
+[ERROR] -Missing frames: 140 -> 185
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 430, Errors: 407 Lost: 94.65 %
+[INFO] -Packets: 924070 Errors: 916943 Lost: 99.22 %
+[INFO] -4.5 fps
+[INFO] -Stop acquisition time: 08:10:23
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 430, Errors: 407 Lost: 94.65 %
+[INFO] -Packets: 924070 Errors: 916943 Lost: 99.22 %
+[INFO] -4.5 fps
+[INFO] -Stop acquisition time: 08:10:23
+isgrabing after: 0
+
+Received buffers:   50
+Incomplete buffers: 50
+Buffers per second: 10.8
+[INFO] -Close device time: 08:10:23
+
