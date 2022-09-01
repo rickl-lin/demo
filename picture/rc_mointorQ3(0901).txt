@@ -1,0 +1,127 @@
+root@tegra-ubuntu:~/rc_genicam_api/build/tools# ./gc_stream -t 21G2683 n=10 ChunkModeActive=0
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 48975
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 01:51:56
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 42844
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [1096].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1376].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1448].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1464].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+isgrabing before: 0
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145728
+[INFO] -PayloadPacketSize: 1464
+[INFO] -Number of payload packets: 2149
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 01:51:58
+isgrabing: 1
+Package size: 1500
+
+[INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+Incomplete buffer received
+[ERROR] -Missing frames: 2 -> 6
+Incomplete buffer received
+[ERROR] -Missing frames: 8 -> 14
+Incomplete buffer received
+[ERROR] -Missing frames: 16 -> 21
+Incomplete buffer received
+[ERROR] -Missing frames: 23 -> 31
+Incomplete buffer received
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[WARNING] -CCP lost.
+[ERROR] -Missing frames: 33 -> 39
+[INFO] -GrabFunc leaving main loop
+[INFO] -Late delivery for previous buffer
+[ERROR] -Missing frames: 41 -> 46
+[INFO] -Late delivery for image buffer
+[ERROR] -Missing frames: 48 -> 54
+Incomplete buffer received
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 55, Errors: 47 Lost: 85.45 %
+[INFO] -Packets: 118195 Errors: 115887 Lost: 98.04 %
+[INFO] -4.3 fps
+[INFO] -Stop acquisition time: 01:51:59
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 55, Errors: 47 Lost: 85.45 %
+[INFO] -Packets: 118195 Errors: 115887 Lost: 98.04 %
+[INFO] -4.3 fps
+[INFO] -Stop acquisition time: 01:52:00
+isgrabing after: 0
+
+Received buffers:   50
+Incomplete buffers: 50
+Buffers per second: 43.4
+[INFO] -Close device time: 01:52:00
+
