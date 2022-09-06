@@ -1,0 +1,86 @@
+Repeating all tests (iteration 21) . . .
+
+Note: Google Test filter = -DeviceReset*
+[==========] Running 287 tests from 50 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from CameraInit
+[ RUN      ] CameraInit.NewCamera
+[INFO] [ML-SYS] Construct system:/root/ARMcti/libGEVTLS2I_V2.7.1.RC.cti
+[INFO] [ML-GT] Construct CGentlConsumer
+[INFO] [ML-SYS] 0x5564cb01b0:Open system
+[INFO] [ML-SYS] 0x5564cb01b0:Get interfaces
+[INFO] [ML-IF] GigE Interface:Construct interface
+[INFO] [ML-IF] GigE Interface:Open interface
+[INFO] [ML-SYS] 0x5564cb01b0:Get interfaces
+[INFO] [ML-IF] Push new device to list:STC-MCS312POE@D4-7C-44-30-5C-61
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Construct device
+[INFO] [ML-IF] Push new device to list:acA2500-14gc@00-30-53-3C-C2-CE
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Construct device
+[INFO] [ML-IF] Push new device to list:a2A2590-22gcPRO@00-30-53-35-EE-6A
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Construct device
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Open device with READONLY
+[INFO] -GEV Version: 2.1^M
+[INFO] -Stream channel is available.^M
+[INFO] -Init device time: 12:19:43^M
+[INFO] - Message channel not Supported^M
+[INFO] [ML-PT] 0x5564f38d40:Construct port
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:url is Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[INFO] [GS-DIS] Gige Discovery thread terminated
+[INFO] [ML-DEV] STC-MCS312POE@D4-7C-44-30-5C-61:Close device
+[INFO] -Close device time: 12:19:43^M
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Open device with READONLY
+[INFO] -GEV Version: 1.1^M
+[INFO] -Stream channel is available.^M
+[INFO] -Init device time: 12:19:43^M
+[INFO] - Message channel not Supported^M
+[INFO] [ML-PT] 0x5565075fd0:Construct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Open device with READONLY
+[INFO] -GEV Version: 1.1^M
+[INFO] -Stream channel is available.^M
+[INFO] -Init device time: 12:19:43^M
+[INFO] - Message channel not Supported^M
+[INFO] [ML-PT] 0x5565075fd0:Construct port
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[INFO] [ML-SYS] 0x5564cb01b0:Get interfaces
+^[[1;33m[WARN] [GC] ^[[0mGevIPConfigurationStatus is not supported:Please confirm that the camera has this feature
+^[[1;33m[WARN] [GC] ^[[0mGevIPConfigurationStatus is not supported:Please confirm that the camera has this feature
+[INFO] [ML-DEV] acA2500-14gc@00-30-53-3C-C2-CE:Close device
+[INFO] -Close device time: 12:19:44^M
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Open device with READONLY
+[INFO] -GEV Version: 1.1^M
+[INFO] -Stream channel is available.^M
+[INFO] -Init device time: 12:19:44^M
+[INFO] - Message channel not Supported^M
+[INFO] [ML-PT] 0x55644f7d10:Construct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+^[[1;33m[WARN] [GC] ^[[0mGevIPConfigurationStatus is not supported:Please confirm that the camera has this feature
+^[[1;33m[WARN] [GC] ^[[0mGevIPConfigurationStatus is not supported:Please confirm that the camera has this feature
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Close device
+[INFO] -Close device time: 12:19:44^M
+[INFO] [ML-PT] 0:Destruct port
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Destruct device
+[INFO] [ML-IF] GigE Interface:Destruct interface
+[INFO] [ML-GT] Destruct CGentlConsumer
+[INFO] [ML-SYS] 0:Destruct system  :/root/ARMcti/libGEVTLS2I_V2.7.1.RC.cti
+^[[1;31m[ERROR] [GS-CAM] ^[[0m[Device F]: Basler
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:Open device with CONTROL
+[INFO] -Start heartbeat thread.^M
+[INFO] -Message channel is available.^M
+[INFO] -Open message channel port.^M
+[INFO] -Message channel port: 40731^M
+[INFO] -GEV Version: 1.1^M
+[INFO] -Stream channel is available.^M
+[INFO] -Init device time: 12:19:44^M
+[INFO] [GS-CAM] Device opened: Basler:a2A2590-22gcPRO:40066865@200.168.0.112
+[INFO] [ML-PT] 0x55648c2ba0:Construct port
+[INFO] [ML-DEV] a2A2590-22gcPRO@00-30-53-35-EE-6A:url is Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[INFO] [GS-DIS] Discovery completed, available device number= 3
+[INFO] [GS-DIS] update devices:
+[INFO] [GENAPI-TEST] cameraPtr->open():0x55644dae40
+[INFO] [GENAPI-TEST] Open A2A2590_22GCPRO json file
+[       OK ] CameraInit.NewCamera (3259 ms)
+
+

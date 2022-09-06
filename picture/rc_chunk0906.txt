@@ -1,0 +1,176 @@
+rc_balser
+
+root@tegra-ubuntu:~/rc_genicam_api/build# tools/gc_stream -t 23982030 n=5 ChunkModeActive=1 ChunkSelector="Timestamp"     
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 60450
+[INFO] -GEV Version: 1.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 07:14:51
+[url is]: Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[set EUM]: Timestamp
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 47181
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [1096].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1376].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1448].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1464].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator supported.
+[INFO] -GEVTestPacket: data ok.
+[attachBuffers] 
+isgrabing before: 0
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 921676
+[INFO] -PayloadPacketSize: 1464
+[INFO] -Number of payload packets: 630
+[INFO] -PacketDelay: 0
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 07:14:53
+isgrabing: 1
+Package size: 1500
+
+[INFO] -Stream uses 16-bit block IDs
+QQQQQ
+AAAA
+Received buffer with timestamp: 0.744254887
+QQQQQ
+AAAA
+Received buffer with timestamp: 0.834014488
+QQQQQ
+AAAA
+Received buffer with timestamp: 0.935280639
+QQQQQ
+AAAA
+Received buffer with timestamp: 0.035204573
+QQQQQ
+AAAA
+Received buffer with timestamp: 0.134087937
+[INFO] -Acknowledge kill request
+[INFO] -GrabFunc leaving main loop
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 6, Errors: 0 Lost: 0.00 %
+[INFO] -Packets: 3780 Errors: 0 Lost: 0.00 %
+[INFO] -Fps computation for camera 1 hasn't stabilized yet. Using running average
+[INFO] -10.2 fps
+[INFO] -Stop acquisition time: 07:14:54
+isgrabing after: 0
+
+
+
+
+Received buffers:   5
+Incomplete buffers: 0
+Buffers per second: 12.8
+[INFO] -Close device time: 07:14:54
+root@tegra-ubuntu:~/rc_genicam_api/build# tools/gc_stream -t 23982030 n=5 ChunkModeActive=1 ChunkSelector="Image" ChunkEnable=1
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 50420
+[INFO] -GEV Version: 1.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 07:15:16
+[url is]: Local:Basler_Ace_GigE_d95e6f44_Version_3_3.zip;c0000000;10ccf
+[set EUM]: Image
+[INFO] -Close device time: 07:15:17
+Exception: Feature not writable: ChunkEnable
+root@tegra-ubuntu:~/rc_genicam_api/build# 
+
+
+
+
+
+
+rc_omron
+
+root@tegra-ubuntu:~/rc_genicam_api/build# tools/gc_stream -t 21G2683 n=5 ChunkModeActive=1 ChunkSelector="Gain" ChunkEnable=1
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 55440
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 07:18:52
+[url is]: Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[set EUM]: Gain
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 45459
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [1096].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1376].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1448].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1464].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [1472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[attachBuffers] 
+isgrabing before: 0
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145756
+[INFO] -PayloadPacketSize: 1464
+[INFO] -Number of payload packets: 2149
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 07:18:54
+isgrabing: 1
+Package size: 1500
+
+[INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+QQQQQ
+[ERROR] -Missing frames: 2 -> 6
+[ERROR] -Missing frames: 8 -> 21
+[INFO] -Acknowledge kill request
+[INFO] -GrabFunc leaving main loop
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 22, Errors: 19 Lost: 86.36 %
+[INFO] -Packets: 47278 Errors: 40831 Lost: 86.36 %
+[INFO] -Fps computation for camera 0 hasn't stabilized yet. Using running average
+[INFO] -7.2 fps
+[INFO] -Stop acquisition time: 07:18:55
+[INFO] -Close device time: 07:18:55
+Exception: Invalid layout of buffer attached to chunk parser! : RuntimeException thrown (file 'ChunkAdapterGEV.cpp', line 99)
+
+
+
+
+
