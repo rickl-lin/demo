@@ -1,0 +1,25 @@
+$./gc_config 21G2683 UserSetSelector="UserSet0" UserSetSave
+[INFO] -Start heartbeat thread.
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 53225
+[INFO] -Message channel source port: 49153
+[INFO] -GEV Version: 2.1
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 11:05:35
+[url is]: Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+[set EUM]: UserSet0
+[ChunkSelector]: 
+[ChunkEnable]: 0
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x01060004] Status: C008
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[WARNING] -CCP lost.
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000B00] Status: C008
+[ERROR] -Can't write message channel port register.
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x00000A00] Status: C008
+[INFO] -Close device time: 11:05:38
+CPort::Write(address=0x1060004, length=4): GC_ERR_ERROR (-1001)
