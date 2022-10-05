@@ -3,17 +3,20 @@ PWD=/root/rc_genicam_api/build
 GENICAM_GENTL64_PATH=/root/ARMcti/libstgentl_omron.cti
 $ tools/gc_stream -t 21G2683 Width=1920 Height=1080 OffsetX=40 OffsetY=40
 [url is]: Local:OmronSentech_STC_GigE_SO3_1_Version_1_2_0.zip;300000;cf94
+OffsetX: 40
 OffsetY: 40
 [attachBuffers] 
 isgrabing before: 0
 isgrabing: 1
 Package size: 9000
 
+[get image offsetX] 40
 [get image offsetY] 1080
-Received buffer with timestamp: 836.103990408
+Received buffer with timestamp: 1216.758229560
 isgrabing after: 0
 
 Received buffers:   1
 Incomplete buffers: 0
 Buffers per second: inf
+
 
