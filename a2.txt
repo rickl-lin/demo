@@ -1,1 +1,2 @@
 456 
+ChunkModeActive=1 ChunkSelector=CounterValue ChunkEnable=1 ChunkSelector=Gain ChunkEnable=1 ChunkSelector=BlackLevel ChunkEnable=1 ChunkSelector=ExposureTime ChunkEnable=1 ChunkSelector=LineStatusAll ChunkEnable=1 ChunkSelector=TimerValue ChunkEnable=1 ChunkSelector=DeviceTemperature ChunkEnable=1
