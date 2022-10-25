@@ -1,0 +1,97 @@
+std::cout << "----------[before LineMode]: " << rcg::getString(nodemap, "LineMode", false) << std::endl;
+rcg::setString(nodemap, "LineSelector", "Line1");
+std::cout << "----------[Lineselector]: " << rcg::getString(nodemap, "LineSelector", false) << std::endl;
+std::cout << "----------[selector after LineMode]: " << rcg::getString(nodemap, "LineMode") << std::endl;
+
+rcg::setString(nodemap, "LineSource", "UserOutput1");
+std::cout << "----------[UserOutput1 after LineMode]: " << rcg::getString(nodemap, "LineMode", false) << std::endl;
+
+rcg::setString(nodemap, "LineSource", "UserOutput2");
+std::cout << "----------[UserOutput2 after LineMode]: " << rcg::getString(nodemap, "LineMode", false) << std::endl;
+
+rcg::setString(nodemap, "LineSource", "FrameTriggerWait");
+std::cout << "----------[FrameTriggerWait after LineMode]: " << rcg::getString(nodemap, "LineMode", false) << std::endl;
+
+rcg::setString(nodemap, "LineSource", "FrameTrigger");
+std::cout << "----------[FrameTrigger after LineMode]: " << rcg::getString(nodemap, "LineMode") << std::endl;
+
+rcg::setString(nodemap, "LineSource", "SensorReadOut");
+std::cout << "----------[SensorReadOut after LineMode]: " << rcg::getString(nodemap, "LineMode", false) << std::endl;
+
+rcg::setString(nodemap, "LineSource", "AcquisitionTriggerWait");
+std::cout << "----------[AcquisitionTriggerWait after LineMode]: " << rcg::getString(nodemap, "LineMode", false)
+          << std::endl;
+
+
+
+
+
+$export GENICAM_GENTL64_PATH=/root/ARMcti/libGEVTLS2I_V2.7.2.RC2_debug_arm.cti
+$./gc_config 21G2683 LineSelector=Line1
+
+
+
+ReadRegister[0x0120000C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0120000C, Data: 0x0000003F
+ReadRegister[0x01200028] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01200028, Data: 0x207FFFF7
+ReadRegister[0x01000014] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000014, Data: 0x01050000
+ReadRegister[0x01050018] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01050018, Data: 0x00140000
+----------[before LineMode]: Input
+[set EUM]: Line1
+----------[Lineselector]: Line1
+----------[selector after LineMode]: ReadRegister[0x0105001C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0105001C, Data: 0x00140001
+Output
+[set EUM]: UserOutput1
+WriteRegister[0x0105001C] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x0105001C, Data: 0x00010001
+----------[UserOutput1 after LineMode]: Output
+[set EUM]: UserOutput2
+----------[UserOutput2 after LineMode]: Output
+[set EUM]: FrameTriggerWait
+WriteRegister[0x0105001C] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x0105001C, Data: 0x00140100
+----------[FrameTriggerWait after LineMode]: Input
+----------[FrameTrigger after LineMode]: Input
+----------[SensorReadOut after LineMode]: Input
+----------[AcquisitionTriggerWait after LineMode]: Input
+Left the hearthbeat loop
+WriteRegister[0x00000B00] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000B00, Data: 0x00000000
+WriteRegister[0x00000A00] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000A00, Data: 0x00000000
+[INFO] -Close device time: 11:18:55
+Terminating message channel thread 0x7fabbbe1d0 (kill = 0)
+
+
+
+
+$export GENICAM_GENTL64_PATH=/root/ARMcti/libstgentl_omron.cti
+$./gc_config 21G2683 LineSelector=Line1
+-------omorn---------
+
+----------[before LineMode]: Output
+[set EUM]: Line1
+----------[Lineselector]: Line1
+----------[selector after LineMode]: Output
+[set EUM]: UserOutput1
+----------[UserOutput1 after LineMode]: Output
+[set EUM]: UserOutput2
+----------[UserOutput2 after LineMode]: Output
+[set EUM]: FrameTriggerWait
+----------[FrameTriggerWait after LineMode]: Output
+[set EUM]: FrameTrigger
+----------[FrameTrigger after LineMode]: Output
+[set EUM]: SensorReadOut
+----------[SensorReadOut after LineMode]: Output
+[set EUM]: AcquisitionTriggerWait
+----------[AcquisitionTriggerWait after LineMode]: Output
+
+
+
+
+
+
