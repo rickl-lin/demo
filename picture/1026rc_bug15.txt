@@ -1,0 +1,90 @@
+root@tegra-ubuntu:~/rc_genicam_api/build# tools/gc_stream -t 21G2683 n=10 ChunkModeActive=1
+[INFO] -Start heartbeat thread.
+[INFO] -GEV Version: 2.1
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 37134
+[INFO] -Message channel source port: 49153
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:14:53
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 58091
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [4472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [6724].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [7848].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8164].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145736
+[INFO] -PayloadPacketSize: 8964
+[INFO] -Number of payload packets: 351
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 10:14:54
+Package size: 9000
+
+[INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+image#0, width=2048, height=1536
+Received buffer with timestamp: 0.855326604
+image#1, width=2048, height=1536
+Received buffer with timestamp: 0.880792307
+image#2, width=2048, height=1536
+Received buffer with timestamp: 0.912239207
+image#3, width=2048, height=1536
+Received buffer with timestamp: 0.937920091
+image#4, width=2048, height=1536
+Received buffer with timestamp: 0.964713772
+image#5, width=2048, height=1536
+Received buffer with timestamp: 0.993302209
+image#6, width=2048, height=1536
+Received buffer with timestamp: 0.021892599
+image#7, width=2048, height=1536
+Received buffer with timestamp: 0.050442954
+image#8, width=2048, height=1536
+Received buffer with timestamp: 0.079088098
+image#9, width=2048, height=1536
+Received buffer with timestamp: 0.107704217
+[INFO] -Acknowledge kill request
+[INFO] -GrabFunc leaving main loop
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 11, Errors: 0 Lost: 0.00 %
+[INFO] -Packets: 3861 Errors: 0 Lost: 0.00 %
+[INFO] -Fps computation for camera 0 hasn't stabilized yet. Using running average
+[INFO] -35.0 fps
+[INFO] -Stop acquisition time: 10:14:55
+
+Received buffers:   10
+Incomplete buffers: 0
+Buffers per second: 39.7
+[INFO] -Close device time: 10:14:55
+
