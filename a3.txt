@@ -1,1 +1,2 @@
 789 
+https://downloadmirror.intel.com/28894/Intel_Data_Center_Manager64_5.0.1.tar.gz
