@@ -1,0 +1,438 @@
+rc grab image disconnect Network over heartbeattime,and then execute ctrl+C will wtuck when close
+--------------
+
+$export GENICAM_GENTL64_PATH=/root/ARMcti/libGEVTLS2I_V2.7.2.RC4.cti
+$tools/gc_stream -t 21G2683
+
+
+discovered Device: 6F00A8C8, Adapter: 6900A8C8
+Recording as dis->param[0]
+discovered Device: 6C00A8C8, Adapter: 6900A8C8
+Recording as dis->param[1]
+Checking access to 6f00a8c8
+Replied.
+CCP value retrieved: 0x2
+Check completed with result 0
+Checking access to 6c00a8c8
+Replied.
+CCP value retrieved: 0x0
+Check completed with result 0
+con->AdapterIP: 6900A8C8
+con->IP_CANCam: 6C00A8C8
+con->AdapterMask: 00FFFFFF
+ReadRegister[0x00000A00] command sent, wait for ACK (0.200000s, 0/3)
+[INFO] -Read Register: Address 0x00000A00, Data: 0x00000000
+WriteRegister[0x00000A00] command sent, wait for ACK(0.200000s, 0/3)
+[INFO] -Write Register: Address 0x00000A00, Data: 0x00000002
+WriteRegister[0x00000938] command sent, wait for ACK(0.200000s, 0/3)
+[INFO] -Write Register: Address 0x00000938, Data: 0x00002710
+[INFO] -Start heartbeat thread.
+ReadRegister[0x00000938] command sent, wait for ACK (0.200000s, 0/3)
+[INFO] -Read Register: Address 0x00000938, Data: 0x00002710
+Entering heartbeat loop (timeout=3333)
+ReadRegister[0x00000A00] command sent, wait for ACK (0.200000s, 0/3)
+[INFO] -Read Register: Address 0x00000A00, Data: 0x00000002
+Connection heartbeat confirmed
+ReadRegister[0x00000000] command sent, wait for ACK (0.200000s, 0/3)
+[INFO] -Read Register: Address 0x00000000, Data: 0x00020001
+[INFO] -GEV Version: 2.1
+ReadRegister[0x00000958] command sent, wait for ACK (0.200000s, 0/3)
+[INFO] -Read Register: Address 0x00000958, Data: 0x000003E8
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+ReadRegister[0x00000900] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000900, Data: 0x00000001
+[INFO] -Message channel is available.
+WriteRegister[0x00000B10] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000B10, Data: 0xC8A80069
+[INFO] -Open message channel port.
+WriteRegister[0x00000B00] command sent, wait for ACK(1.000000s, 0/3)
+Entering messages loop
+[INFO] -Write Register: Address 0x00000B00, Data: 0x0000EB30
+[INFO] -Message channel port: 60208
+ReadRegister[0x00000930] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000930, Data: 0x80000000
+ReadRegister[0x00000B1C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000B1C, Data: 0x0000C001
+[INFO] -Message channel source port: 49153
+ReadRegister[0x0000093C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0000093C, Data: 0x00000000
+ReadRegister[0x00000940] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000940, Data: 0x3B9ACA00
+time_one_tick: 1.000000 ns
+ReadRegister[0x00000904] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000904, Data: 0x00000001
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001FE4
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 08:22:27
+ReadRegister[0x00000938] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000938, Data: 0x00002710
+ReadRegister[0x00000000] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000000, Data: 0x00020001
+ReadRegister[0x00000000] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000000, Data: 0x00020001
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+WriteRegister[0x01080004] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x01080004, Data: 0x00000000
+ReadRegister[0x00000904] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000904, Data: 0x00000001
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+WriteRegister[0x00000D18] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D18, Data: 0xC8A80069
+[INFO] -Stream channel port: 44856
+WriteRegister[0x00000D00] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D00, Data: 0x0000AF38
+ReadRegister[0x0000092C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0000092C, Data: 0xC0000000
+ReadRegister[0x00000D1C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D1C, Data: 0x0000C000
+[INFO] -Stream channel source port: 49152
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+ReadRegister[0x00000938] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000938, Data: 0x00002710
+WriteRegister[0x00000938] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000938, Data: 0x00007530
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001194
+ReadRegister[0x00000A00] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000A00, Data: 0x00000002
+Connection heartbeat confirmed
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001194
+[INFO] -Flush stream channel socket [4472].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001194
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001194
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001A60
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001A60
+[INFO] -Flush stream channel socket [6724].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001A60
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001A60
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001EC4
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001EC4
+[INFO] -Flush stream channel socket [7848].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40001EC4
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0001EC4
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC00020F8
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x400020F8
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x400020F8
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC00020F8
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002210
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002210
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002210
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002210
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC000229C
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x4000229C
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x4000229C
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC000229C
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC00022E4
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x400022E4
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x400022E4
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC00022E4
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002308
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002308
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002308
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002308
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002318
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002318
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002318
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002318
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002320
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002320
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002320
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002320
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002324
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002324
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002324
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002324
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002328
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002328
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002328
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+[INFO] -Flush stream channel socket [8164].
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+WriteRegister[0x00000D04] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000D04, Data: 0xC0002328
+ReadRegister[0x00000934] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000934, Data: 0xDC6F0077
+[INFO] -GEVTestPacket: LFSR generator not supported.
+WriteRegister[0x00000938] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x00000938, Data: 0x00002710
+ReadRegister[0x00000A00] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000A00, Data: 0x00000002
+Connection heartbeat confirmed
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+ReadRegister[0x01000030] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000030, Data: 0x010C0000
+ReadRegister[0x010C0004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x010C0004, Data: 0x00300000
+ReadRegister[0x0000092C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0000092C, Data: 0xC0000000
+ReadRegister[0x00000960] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000960, Data: 0x00000000
+ReadRegister[0x00000D20] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D20, Data: 0x00000000
+ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145728
+[INFO] -PayloadPacketSize: 8964
+[INFO] -Number of payload packets: 351
+ReadRegister[0x00000D08] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D08, Data: 0x00001770
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+Launched grab thread 0x7f96af81d0
+[INFO] -Start acquisition time: 08:22:28
+Entering grab_func loop with rcvbuf_size = 9064
+ReadRegister[0x0100000C] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x0100000C, Data: 0x01030000
+ReadRegister[0x01030004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01030004, Data: 0x00000000
+WriteRegister[0x01030004] command sent, wait for ACK(1.000000s, 0/3)
+[INFO] -Write Register: Address 0x01030004, Data: 0x00000001
+Package size: ReadRegister[0x00000D04] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x00000D04, Data: 0x40002328
+9000
+
+recieve length : 44
+[INFO] -Stream uses 16-bit block IDs
+New Leader packet received
+setup ImageHeader from leader packet
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+recieve length : 8972
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+Enqueueing image #1 ...
+Image #1 enqueued. Updating fps.
+Setting up BlockIDCheck: 1
+copy 2048x1536 pixel data in image memory
+recieve length : 44
+New Leader packet received
+setup ImageHeader from leader packet
+recieve length : 8972
+Copied: 3145728 bytes, no adjustment needed
+Returned buffer to free list
+[gnetl chunkdata]: 0
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+[Genapi chunkdata]: 0
+Received buffer with timestamp: 0.105903564
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+Enqueueing image #2 ...
+Image #2 enqueued. Updating fps.
+BlockIDCheck ok: 2
+copy 2048x1536 pixel data in image memory
+recieve length : 44
+New Leader packet received
+setup ImageHeader from leader packet
+recieve length : 8972
+Copied: 3145728 bytes, no adjustment needed
+Returned buffer to free list
+[gnetl chunkdata]: 0
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+[Genapi chunkdata]: 0
+Received buffer with timestamp: 0.131407239
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+Enqueueing image #3 ...
+Image #3 enqueued. Updating fps.
+BlockIDCheck ok: 3
+copy 2048x1536 pixel data in image memory
+recieve length : 44
+New Leader packet received
+setup ImageHeader from leader packet
+recieve length : 8972
+Copied: 3145728 bytes, no adjustment needed
+Returned buffer to free list
+[gnetl chunkdata]: 0
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+[Genapi chunkdata]: 0
+Received buffer with timestamp: 0.159816930
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+Enqueueing image #4 ...
+Image #4 enqueued. Updating fps.
+copy 2048x1536 pixel data in image memory
+BlockIDCheck ok: 4
+recieve length : 44
+New Leader packet received
+setup ImageHeader from leader packet
+recieve length : 8972
+Copied: 3145728 bytes, no adjustment needed
+Returned buffer to free list
+[gnetl chunkdata]: 0
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+[Genapi chunkdata]: 0
+Received buffer with timestamp: 0.191257827
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+Enqueueing image #5 ...
+Image #5 enqueued. Updating fps.
+BlockIDCheck ok: 5
+copy 2048x1536 pixel data in image memory
+Copied: 3145728 bytes, no adjustment needed
+Returned buffer to free list
+recieve length : 44
+New Leader packet received
+setup ImageHeader from leader packet
+[gnetl chunkdata]: recieve length : 8972
+0
+ReadRegister[0x01000020] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01000020, Data: 0x01080000
+ReadRegister[0x01080004] command sent, wait for ACK (1.000000s, 0/3)
+[INFO] -Read Register: Address 0x01080004, Data: 0x00000000
+[Genapi chunkdata]: 0
+Received buffer with timestamp: 0.215164550
+recieve length : 8336
+recieve length : 16
+Sending current buffer (no missing packets)
+
+
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+Incomplete buffer received
+^CStopping ...
+Incomplete buffer received
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x01030004] Status: C008
+[INFO] -Write Register: No acknowledge header available
+[ERROR] -WriteRegister[0x01030004] Status: C008
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[ERROR] -CCP connection failure
+
