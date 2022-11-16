@@ -1,2 +1,1 @@
 
-tools/gc_config 21G2683 "UserSetSelector"="UserSet1" "GevCurrentIPConfigurationLLA"="0" GevCurrentIPConfigurationDHCP="1" "Width"="1920" "Height"="1080" "OffsetX"=40 "OffsetY"="40" "Gamma"="2" UserSetSave "UserSetSelector"="UserSet2" "Gain"="10" SensorHeight="1080" UserSetSave "UserSetSelector"="UserSet1" "GevCurrentIPConfigurationLLA"="1" GevCurrentIPConfigurationDHCP="0" "OffsetX"=0 "OffsetY"="0" "Width"="2048" "Height"="1536" "Gamma"="1" UserSetSave "UserSetSelector"="UserSet2" "Gain"="0" SensorHeight="1536"
