@@ -1,0 +1,197 @@
+$export GENICAM_GENTL64_PATH=/root/ARMcti/libGEVTLS2I_V2.7.2.RC5_debug_arm.cti
+$./gc_stream -t 21G2683 n=10
+[INFO] -Start heartbeat thread.
+[INFO] -GEV Version: 2.1
+[INFO] -Message channel is available.
+[INFO] -Open message channel port.
+[INFO] -Message channel port: 44449
+[INFO] -Message channel source port: 49153
+[INFO] -Stream channel is available.
+[INFO] -Init device time: 10:31:30
+[INFO] -Open stream channel.
+[INFO] -Stream channel IP: 200.168.0.105
+[INFO] -Stream channel port: 55187
+[INFO] -Stream channel source port: 49152
+[INFO] -Flush stream channel socket [4472].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [6724].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [7848].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8412].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8692].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8832].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8904].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8940].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8956].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8964].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8968].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8972].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Flush stream channel socket [8972].
+[INFO] -GEVTestPacket: LFSR generator not supported.
+[INFO] -Width: 0
+[INFO] -Height: 0
+[INFO] -PixelFormat: 0x00000000
+[INFO] -BitsPerPixel: 0
+[INFO] -PayloadSize: 3145736
+[INFO] -PayloadPacketSize: 8964
+[INFO] -Number of payload packets: 351
+[INFO] -PacketDelay: 6000
+[INFO] -Flush stream channel socket [len = 0].
+[INFO] -Allocate ring buffer for images.
+[INFO] -Allocate index buffer for images.
+[INFO] -Start acquisition time: 10:31:31
+Package size: [INFO] -Stream uses 16-bit block IDs
+[WARNING] -Version mismatch. GEV Version: 2, GVSP Version (Extended ID): 1
+9000
+
+[INFO] -Still 325 missing packets. Updated buffer pointers
+image#0
+Incomplete buffer received
+[INFO] -Still 325 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 3 -> 13
+image#0
+Incomplete buffer received
+image#0
+Incomplete buffer received
+[ERROR] -Missing frames: 15 -> 2
+[INFO] -Still 336 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 4 -> 14
+image#0
+Incomplete buffer received
+image#0
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+image#1
+Incomplete buffer received
+[INFO] -Still 325 missing packets. Updated buffer pointers
+image#1
+Incomplete buffer received
+image#1
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+image#1
+Incomplete buffer received
+[INFO] -Still 325 missing packets. Updated buffer pointers
+image#1
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+image#2
+Incomplete buffer received
+image#2
+Incomplete buffer received
+[INFO] -Still 325 missing packets. Updated buffer pointers
+image#2
+Incomplete buffer received
+[ERROR] -Missing frames: 24 -> 35
+image#2
+Incomplete buffer received
+[ERROR] -Missing frames: 37 -> 23
+[INFO] -Still 325 missing packets. Updated buffer pointers
+image#2
+Incomplete buffer received
+[ERROR] -Missing frames: 25 -> 36
+image#3
+Incomplete buffer received
+[INFO] -Still 323 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 39 -> 52
+image#3
+Incomplete buffer received
+image#3
+Incomplete buffer received
+[ERROR] -Missing frames: 54 -> 38
+image#3
+Incomplete buffer received
+[ERROR] -Missing frames: 40 -> 53
+image#3
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+image#4
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+image#4
+Incomplete buffer received
+image#4
+Incomplete buffer received
+image#4
+Incomplete buffer received
+image#4
+Incomplete buffer received
+[WARNING] -Time out while waiting for a new image (1000)
+[ERROR] -Missing frames: 60 -> 72
+image#5
+Incomplete buffer received
+[ERROR] -Missing frame: 74
+image#5
+Incomplete buffer received
+[ERROR] -Missing frames: 76 -> 110
+[INFO] -Still 324 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 112 -> 119
+image#5
+Incomplete buffer received
+image#5
+Incomplete buffer received
+[ERROR] -Missing frames: 121 -> 59
+image#5
+[INFO] -Still 324 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 61 -> 120
+Incomplete buffer received
+image#6
+Incomplete buffer received
+image#6
+Incomplete buffer received
+[INFO] -Still 324 missing packets. Updated buffer pointers
+[ERROR] -Missing frames: 124 -> 138
+image#6
+Incomplete buffer received
+image#6
+Incomplete buffer received
+[INFO] -Read Register: No acknowledge header available
+[ERROR] -ReadRegister[0x00000A00] Status: C008
+[WARNING] -CCP lost.
+[ERROR] -Missing frames: 140 -> 123
+[ERROR] -Missing frames: 125 -> 139
+image#6
+Incomplete buffer received
+[INFO] -Acknowledge kill request
+[INFO] -GrabFunc leaving main loop
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 374, Errors: 338 Lost: 90.37 %
+[INFO] -Packets: 131274 Errors: 130075 Lost: 99.08 %
+[INFO] -8.7 fps
+[INFO] -Stop acquisition time: 10:31:35
+[INFO] -CCP reconnection.
+[WARNING] -CCP access lost. Access mode reset.
+[INFO] -Stream channel source port: 49152
+[INFO] -Message channel is available.
+[INFO] -Message channel port: 44449
+[INFO] -Message channel source port: 49153
+Cannot grab images
+Cannot grab images
+Cannot grab images
+---stopstream----
+[INFO] -Free index buffer for images.
+[INFO] -Free ring buffer for images.
+[INFO] -Frames: 374, Errors: 338 Lost: 90.37 %
+[INFO] -Packets: 131274 Errors: 130075 Lost: 99.08 %
+[INFO] -8.7 fps
+[INFO] -Stop acquisition time: 10:31:44
+--stream close---
+----success------
+
+Received buffers:   35
+Incomplete buffers: 35
+Buffers per second: 2.73
+-----close-----
+[INFO] -Close device time: 10:31:44
+
