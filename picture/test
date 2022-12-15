@@ -1,1 +1,4 @@
 test
+
+
+curl -v -H "Content-Type: application/json" -XPOST -s "http://localhost:3100/loki/api/v1/push" --data-raw   "{\"streams\": [{ \"stream\": { \"hostname\": \"server1\" }, \"values\": [ [ \"$(date +%s000000000)\", \"date=$(date) method=POST ip=200.168.0.103 level=info status=200\" ] ] }]}"
