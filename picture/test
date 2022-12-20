@@ -1,3 +1,10 @@
 test
 
 https://www.cnblogs.com/zhangmingcheng/p/16455325.html
+
+^(?<time>\S+\s\d+\s\S+) (?<loghost>\S+) (?<process>[^:]*)?\:? (?<information>[^$]*)$
+Dec 16 10:46:18 P223000061 systemd[1]: kubelet.service: Failed with result 'exit-code'.
+Dec 20 14:00:00 P223000061 jenkins[984]: 2022-12-20 05:29:18.599+0000 [id=264]#011INFO#011hudson.model.AsyncPeriodicWork#lambda: Started Periodic background build discarder
+
+^(?<ID>[^ ]*) ?[\|]? (?<date>[^ ]*) ?[\|]? (?<time>[^ ]*) ?[\|]? (?<sensor>[^ ]*) (?<DeviceID>[^ ]*) ?[\|]? (?<message>[^\$]*)  ?[\|]? (?<direction>\S+)$
+3d | 01/01/2012 | 00:00:45 | Fan #0x20 | Lower Critical going low  | Asserted
