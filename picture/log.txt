@@ -1,0 +1,22 @@
+BIOS Firmware Update
+$ipmitool -U admin -P 12345678 -p 3032 -I lanplus -H 10.255.115.93 -z 0x7fff hpm upgrade temp-upload/Ellington_BIOS_signed_hash_v1.1.1.hpm force
+
+Setting large buffer to 32767
+
+PICMG HPM.1 Upgrade Agent 1.0.9: 
+
+Validating firmware image integrity...OK
+Performing preparation stage...
+    Invalid image file for product 514
+
+    Image Information
+        Device Id : 0x20
+        Prod   Id : 0x0201
+        Manuf  Id : 0x007d16
+    Board Information
+        Device Id : 0x20
+        Prod   Id : 0x0202
+        Manuf  Id : 0x007d16
+ Continue ignoring DeviceID/ProductID/ManufacturingID (Y/N): ^C
+SIGN INT: Close Interface IPMI v2.0 RMCP+ LAN Interface
+
