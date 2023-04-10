@@ -1,0 +1,33 @@
+a.收集系統的所有歷史日誌，並呈現在UI上面，以便於系統出問題時，可以看出來是什麼原因。
+1.透過fluent bit(輕量化日誌處理器)收集system log 和 system event log 並將其儲存到 loki(資料庫)，並將結果呈現在grafana和UI。
+  -修改fluent bit設定檔案，收集想要的system log 和 system event log，並將它建立成docker image為了讓他可以在不同環境下可以執行
+   ，再透過hlem的方式，佈署到想要的server上面。
+  -修改loki設定檔案，設定符合預期的資料庫系統，用來永久保存log資訊，並透過helm的方式，佈署到想要的server上面。
+  -透過grafana從資料庫讀取資訊，為了提供給其他同人後續使用。
+  -透過UI直接讀取資料庫資訊並呈現在頁面上。
+2.優化收尋介面的UI
+  -透過選取不同的Rack來顯示相對應rack上面的IP
+  -透過filter功能可以更加快速的讀取想要的log資訊
+  -顯示的table也可以依照時間進行排序
+  -調整UI排版讓頁面可以與視窗縮放跟著改變
+b.讀取rack上面的switch，收集ethernet，網路傳輸相關資訊，並透過grafana呈現出圖表狀態。
+1.利用SNMP exporter收集ethernet的資訊，再透過Prometheus來處理並且監控數據，最終傳送到grafana以圖表的方式現在使用的狀況。
+  -修改SNMP exporter收集特定想要的資訊，並透過helm的方式，佈署到想要的server上面。
+  -修改Prometheus設定檔案，讀取SNMP exporter資訊
+  -透過grafana讀取Prometheus資訊，最終以圖表方式顯示結果。
+2.優化dashboard排版
+  -將讀取到的原始資訊名稱修改為使用者看得懂的描述
+  -修改switch port的排列方式，使其與實體switch port排列方式相同。
+c.可多台式的更新firmware update
+1.透過自己撰寫一個rest api server，來接收UI方面重送的訊息，再透過此rest api server 進行firmware update的更新操作。
+  -透過rest api server，來達成接收檔案、讀取更新進度、更新firmware、讀取firmware版本的功能。
+  -讀取更新進度和更新firmware function，採用go routine(多執行緒)，來達到同時間可以更新多台firmware和讀取多台的功能。
+2.UI介面透過表格的方式來呈現結果
+  -使用checkbox的方式，來勾選選取的裝置，並使用for each的方式將命令一條一條的往rest api server傳送。
+  -按下更新後個別裝置會顯示他自己的更新進度條，直到跟新完成。
+d.Gige camera integration test，並產生相關報告。
+1.將相機的實際使用情況，進行多次的測試，來檢驗程式是否有問題，若有問題反映給相關人員。
+  -進行grab image的測試(關閉/開啟chunk)，來判斷讀取到的圖片使否有符合我們原先設定的大小或是網路所造成的丟封包問題。
+  -進行感應器trigger 拍照
+  -進行userset的功能測試，看是否會保留資前的設定
+  -產生最終的測試報告
