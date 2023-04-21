@@ -1,0 +1,187 @@
+$ ipmitool -v -U admin -P pega#1234 -p 3042 -I lanplus -N3 -R1 -H 10.255.114.77 -z 0x3fff hpm upgrade Ellington_BMC_128MB_signed_hash_v1.10.00.hpm force
+Running Get PICMG Properties my_addr 0x20, transit 0, target 0x20
+Error response 0xc1 from Get PICMG Properities
+Running Get VSO Capabilities my_addr 0x20, transit 0, target 0x20
+Invalid completion code received: Invalid command
+Discovered IPMB address 0x0
+Setting large buffer to 16383
+
+PICMG HPM.1 Upgrade Agent 1.0.9: 
+
+TARGET UPGRADE CAPABILITIES
+-------------------------------
+HPM.1 version............0    
+Component 0 presence....[y]   
+Component 1 presence....[y]   
+Component 2 presence....[y]   
+Component 3 presence....[n]   
+Component 4 presence....[n]   
+Component 5 presence....[y]   
+Component 6 presence....[y]   
+Component 7 presence....[y]   
+Upgrade undesirable.....[n]   
+Aut rollback override...[n]   
+IPMC degraded...........[y]   
+Deferred activation......[y]   
+Service affected........[y]   
+Manual rollback.........[n]   
+Automatic rollback......[n]   
+Self test...............[y]   
+Upgrade timeout.........[1275 sec] 
+Self test timeout.......[5 sec] 
+Rollback timeout........[1275 sec] 
+Inaccessibility timeout.[100 sec] 
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: BOOT
+
+Current Version: 
+ Major: 13
+ Minor: 1
+ Aux  : 000 000 000 000
+
+Deferred FW Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: APP
+
+Current Version: 
+ Major: 1
+ Minor: 10
+ Aux  : 000 000 000 000
+
+Deferred FW Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: BIOS
+
+Current Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+Error getting component properties
+compcode=0x83: Unknown (0x83)
+Get CompRollbackVersion Failed for component Id 2
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: CPLD
+
+Current Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+Deferred FW Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: AEP
+
+Current Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+Deferred FW Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+GENERAL PROPERTIES
+-------------------------------
+Payload cold reset req....[y]   
+Def. activation supported.[y]   
+Comparison supported......[n]   
+Preparation supported.....[y]   
+Rollback supported........[n]   
+
+Description string: FW
+
+Current Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+Deferred FW Version: 
+ Major: 0
+ Minor: 0
+ Aux  : 000 000 000 000
+
+Validating firmware image integrity...OK
+Performing preparation stage...TARGET UPGRADE CAPABILITIES
+-------------------------------
+HPM.1 version............0    
+Component 0 presence....[y]   
+Component 1 presence....[y]   
+Component 2 presence....[y]   
+Component 3 presence....[n]   
+Component 4 presence....[n]   
+Component 5 presence....[y]   
+Component 6 presence....[y]   
+Component 7 presence....[y]   
+Upgrade undesirable.....[n]   
+Aut rollback override...[n]   
+IPMC degraded...........[y]   
+Deferred activation......[y]   
+Service affected........[y]   
+Manual rollback.........[n]   
+Automatic rollback......[n]   
+Self test...............[y]   
+Upgrade timeout.........[1275 sec] 
+Self test timeout.......[5 sec] 
+Rollback timeout........[1275 sec] 
+Inaccessibility timeout.[100 sec] 
+
+
+Services may be affected during upgrade. Do you wish to continue? (y/n): y
+Error getting component properties
+
+Error getting component properties
+
+Firmware upgrade procedure failed
+
+Close Session command failed
