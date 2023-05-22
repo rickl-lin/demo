@@ -1,0 +1,15 @@
+Unreachable: This status indicates that Ansible was unable to establish a connection with the target host or hosts. It could be due to network issues, incorrect credentials, firewall settings, or the host being down or inaccessible. Ansible will attempt to connect to the host but fails, resulting in the "unreachable" status for the affected hosts.
+
+Skipped: When Ansible encounters a task, it evaluates certain conditions to determine if the task should be executed. If the conditions are not met, Ansible skips the task and moves on to the next one. This could occur when using conditional statements or when the task has already been completed successfully on a previous run and does not need to be repeated.
+
+Rescued: The "rescued" status typically relates to error handling and exception scenarios. When a task encounters an error, Ansible can be configured to catch the error and execute specific recovery or cleanup tasks defined as part of a "rescue" block. The "rescued" status indicates that Ansible encountered an error but successfully handled it by executing the rescue tasks.
+
+Ignored: This status signifies that Ansible explicitly ignored a particular task or host. It usually happens when you define specific exclusions or filters in your playbook or invent
+
+Backup the Configuration: Once connected to the BMC, you can use the following command to perform a backup
+ipmitool -H <BMC IP> -U <username> -P <password> -I lanplus bmc config backup <backup_filename>
+Replace <backup_filename> with the desired name and location for the backup file. This command will create a backup of the BMC configuration.
+
+Restore the Configuration: To restore the configuration, use the following command:
+ipmitool -H <BMC IP> -U <username> -P <password> -I lanplus bmc config restore <backup_filename>
+Replace <backup_filename> with the location and name of the backup file you want to restore. This command will restore the configuration from the backup file.
