@@ -1,3 +1,6 @@
 test
 
 https://www.cnblogs.com/zhangmingcheng/p/16455325.html
+例如 UI 上面有停止的按鈕，點下去後，如何主動通知並且停止正在跑的 Job，這邊很簡單，可以使用 channel + select 方式。
+假設背景有跑了無數個 goroutine，或者是 goroutine 內又有跑 goroutine
+建立了三個 worker node 來處理不同的 Job每個 worknode 都有獨立的 cancel func 開發者可以透過其他地方呼叫 cancel() 來決定哪一個 worker 需要被停止，這時候可以做到使用 context 來停止多個 goroutine 的效果
