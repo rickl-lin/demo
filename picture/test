@@ -1,3 +1,13 @@
 test
 
 https://www.cnblogs.com/zhangmingcheng/p/16455325.html
+
+Simplicity and Consistency: Redfish provides a simple and consistent interface for managing hardware across different vendors and platforms.
+
+Scalability: Redfish is designed to scale efficiently, making it suitable for managing large-scale data centers with thousands of devices.
+
+Standardized API: It offers a standard set of APIs and data models, allowing for easier integration and automation of management tasks.
+
+Security: Redfish includes features for secure communication and access control to ensure the confidentiality and integrity of management operations.
+
+Flexibility: The Redfish standard is designed to be extensible, allowing vendors to add custom features while maintaining compatibility with the core specification.
